@@ -1,8 +1,8 @@
 [
   {
-    "outputFileName": "Scripts/loop2loop.min.js",
+    "outputFileName": "Scripts/Palindrome.min.js",
     "inputFiles": [
-      "Scripts/loop2loop.js"
+      "Scripts/Palindrome.js"
     ]
   }
 ]

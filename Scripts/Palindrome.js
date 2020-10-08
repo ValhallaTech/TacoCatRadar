@@ -7,7 +7,7 @@ document.getElementById("btnFlip").addEventListener("click", function() {
     for (let loop = inputWord.length - 1; loop >= 0; loop--) {
         outputWord += lowerInput.charAt(loop);
     }
-    document.getElementById("outputWord").innerHTML = outputWord;
+    document.getElementById("outputWord").innerHTML = "Error" ?? outputWord;
 });
 
 //function reverseWord() {
