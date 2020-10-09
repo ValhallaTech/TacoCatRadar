@@ -13,9 +13,8 @@ document.getElementById("btnFlip").addEventListener("click", function() {
 
 if (outputWord === reversedWord) {
     document.getElementById()
-    
-}
 
+}
 //For Loop work space
 //    for (let loop = inputWord.length - 1; loop >= 0; loop--) {
 //        outputWord += lowerInput.charAt(loop);
