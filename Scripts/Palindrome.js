@@ -11,10 +11,9 @@ function funReverse02(str) {
 //}
 
 document.getElementById("btnFlip").addEventListener("click", function() {
-    let reversed = "";
-    var str = document.getElementById("inputBox").value;
-    reversed = funReverse02(str);
-    document.getElementById("outputBox").innerHTML = reversed;
+    let str = document.getElementById("inputBox").value;
+    let reversed = funReverse02(str);
+    document.getElementById("outputBox").value = reversed;
 });
 
 //if (outputWord === reversedWord) {
