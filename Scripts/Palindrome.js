@@ -1,20 +1,43 @@
 ﻿
-function funReverse02(str) {
-    let reversed = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        reversed += str[i];
+function fncReverse02 ()
+{
+    let reversedStr = "";
+    let inputStr = document.getElementById ( "inputBox" ).value;
+    for ( let i = inputStr.length - 1; i >= 0; i-- )
+    {
+        reversedStr += inputStr[i];
     }
-    return reversed;
+    return reversedStr;
 }
+
+document.getElementById ( "btnFlip" ).addEventListener ( "click",
+        function ()
+        {
+            let inputStr = document.getElementById("inputBox").value;
+            let reversedStr = fncReverse02 ();
+            document.getElementById ( "outputBox" ).innerHTML = reversedStr;
+
+            if ( inputStr == reversedStr )
+            {
+                swal({
+                    title: "Palindrome Confirmed",
+                    icon: "success",
+                });
+            }
+            else
+            {
+            swal({
+            title: "Palindrome Failz",
+            icon: "error",
+        });
+    }
+        });
+
+
+
 
 //function reverseMe() {
 //}
-
-document.getElementById("btnFlip").addEventListener("click", function() {
-    let str = document.getElementById("inputBox").value;
-    let reversed = funReverse02(str);
-    document.getElementById("outputBox").value = reversed;
-});
 
 //if (outputWord === reversedWord) {
 //    document.getElementById()
