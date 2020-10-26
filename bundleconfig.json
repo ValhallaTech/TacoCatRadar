@@ -4,5 +4,11 @@
     "inputFiles": [
       "Scripts/Palindrome.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/confetti.min.js",
+    "inputFiles": [
+      "Scripts/confetti.js"
+    ]
   }
 ]

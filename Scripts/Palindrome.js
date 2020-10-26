@@ -1,33 +1,36 @@
 ﻿
+//Function that reverses the input string
 function fncReverse02 ()
 {
     let reversedStr = "";
     let inputStr = document.getElementById ( "inputBox" ).value;
-    for ( let i = inputStr.length - 1; i >= 0; i-- )
+    let inputStrLngth = inputStr.length
+    for ( let i = inputStrLngth - 1; i >= 0; i-- )
     {
         reversedStr += inputStr[i];
     }
     return reversedStr;
 }
 
+//Wires the button element to call the reverse function and check if the input string is a palindrome by comparing it to the output string
 document.getElementById ( "btnFlip" ).addEventListener ( "click",
         function ()
         {
             let inputStr = document.getElementById("inputBox").value;
             let reversedStr = fncReverse02 ();
-            document.getElementById ( "outputBox" ).innerHTML = reversedStr;
-
-            if ( inputStr == reversedStr )
-            {
-                swal({
-                    title: "Palindrome Confirmed",
+            let fncSuccess01 = swal({
+                    title: "You Haz Palindrome!",
                     icon: "success",
                 });
+            if ( inputStr === reversedStr )
+            {
+                confetti.start(1000); 
+                fncSuccess01;
             }
             else
             {
             swal({
-            title: "Palindrome Failz",
+            title: "Nope. Palindrome Failz...",
             icon: "error",
         });
     }
