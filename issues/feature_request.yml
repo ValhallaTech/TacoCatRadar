@@ -1,0 +1,57 @@
+---
+name: Feature Request
+---
+
+## Feature Summary
+Upgrade Bootstrap to the latest version (5.x or newer) and remove jQuery from the project since Bootstrap no longer requires jQuery. This will modernize the codebase and reduce unnecessary dependencies.
+
+## Problem Statement
+Currently, the project uses Bootstrap 4.5.0 and jQuery 3.5.1. Bootstrap 5+ does not require jQuery, which is still included in the code and package references. This creates unnecessary dependency overhead and can hinder maintainability.
+
+## Proposed Solution
+- Upgrade Bootstrap to the latest version using Yarn: `yarn add bootstrap@latest`.
+- Update HTML files (e.g. Code.html, Solve.html) to reference Bootstrap 5+ bundle instead of Bootstrap 4 and jQuery scripts.
+- Remove jQuery script tags from HTML files and delete related files from Scripts/.
+- Remove jQuery references from YARN_MIGRATION.md as part of the upgrade process.
+- Refactor any code that uses jQuery (if present) to vanilla JS or Bootstrap-native event handling.
+
+## Acceptance Criteria
+- Bootstrap upgraded to the latest version
+- No jQuery scripts loaded anywhere
+- All UI and JS functionality works as before
+- Scripts/ folder does not contain vendor JS for Bootstrap or jQuery
+- Documentation updated to reflect dependency changes
+
+## Additional Context
+Relevant code references:
+- [Code.html](https://github.com/ValhallaTech/TacoCatRadar/blob/main/Code.html): `<script src="//code.jquery.com/jquery-3.5.1.slim.min.js">` and `<script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">` must be replaced with Bootstrap 5+ bundle only.
+- [Solve.html](https://github.com/ValhallaTech/TacoCatRadar/blob/main/Solve.html): Same script tags must be updated.
+- [YARN_MIGRATION.md](https://github.com/ValhallaTech/TacoCatRadar/blob/main/YARN_MIGRATION.md): Remove jQuery and Popper.js steps after upgrading Bootstrap.
+- [Scripts/jquery-3.5.1.slim.js](https://github.com/ValhallaTech/TacoCatRadar/blob/main/Scripts/jquery-3.5.1.slim.js): Delete as part of cleanup.
+
+## Alternatives
+Continue using Bootstrap 4.x and jQuery (not recommended for modern web apps)
+
+## Browser Compatibility
+Target latest Chrome, Firefox, Safari, Edge; desktop and mobile browsers
+
+## Complexity
+Moderate - New component or algorithm
+
+## Feature Category
+UI/UX Enhancements
+
+## Implementation Area
+Frontend JavaScript Only
+
+## Priority
+High - Significant improvement needed
+
+## UI Features
+Bootstrap Components,Mobile & Responsive Design
+
+## Use Cases
+- Easier maintenance and upgrades for frontend dependencies
+- Improved performance and reduced bundle size
+- Modern best practices for frontend development
+
