@@ -1,0 +1,316 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for TacoCatRadar
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # ✨ Feature Request
+        
+        Thank you for suggesting a new feature for TacoCatRadar! Your ideas help us build a better palindrome detection and string manipulation web application.
+        
+        **Before submitting:**
+        - Search existing issues and discussions for similar requests
+        - Consider how this feature aligns with TacoCatRadar's focus on palindrome detection and string manipulation
+        - Think about the user experience and fun, interactive nature of the app
+
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: Feature Summary
+      description: A brief summary of the requested feature
+      placeholder: Provide a concise summary of the feature you'd like to see...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      description: Which area of TacoCatRadar does this feature relate to?
+      options:
+        - String Manipulation Features
+        - UI/UX Enhancements
+        - Performance Improvements
+        - Additional Palindrome Variations
+        - Export/Share Functionality
+        - Accessibility Features
+        - Animation & Visual Effects
+        - Form Validation & Input Handling
+        - Documentation & Help
+        - Developer Experience
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        Describe the current limitation or challenge that this feature would address.
+        
+        Examples:
+        - Current palindrome detection doesn't handle...
+        - Users struggle to...
+        - The app would be more useful if...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail
+      placeholder: |
+        Provide a detailed description of how you envision this feature working.
+        
+        Consider:
+        - User interface changes
+        - JavaScript/C# implementation
+        - Bootstrap component usage
+        - Animation and feedback (SweetAlert, Confetti)
+        - Mobile/responsive design impact
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Specific scenarios where this feature would be valuable
+      placeholder: |
+        Provide specific examples of how this feature would be used:
+        
+        **Use Case 1:**
+        - User: [type of user]
+        - Scenario: [what they're trying to do]
+        - Benefit: [how this feature helps]
+        - Example Input: "12321" (numeric palindrome)
+        
+        **Use Case 2:**
+        - User: [type of user]
+        - Scenario: [what they're trying to do]
+        - Benefit: [how this feature helps]
+        - Example Input: "Was it a car or a cat I saw?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: implementation-area
+    attributes:
+      label: Implementation Area
+      description: Where would this feature primarily be implemented?
+      options:
+        - Frontend JavaScript Only
+        - Backend C# Service Only
+        - Both Frontend and Backend
+        - UI/Bootstrap Components
+        - Third-party Library Integration
+        - Configuration/Settings
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: string-features
+    attributes:
+      label: String Processing Features
+      description: Which string manipulation capabilities would this feature involve?
+      options:
+        - label: Palindrome Detection Algorithm
+        - label: String Reversal Logic
+        - label: Case Normalization
+        - label: Special Character Handling
+        - label: Multi-language Support
+        - label: Numeric Palindromes
+        - label: Word-level vs Character-level Processing
+        - label: Pattern Recognition
+
+  - type: checkboxes
+    id: ui-features
+    attributes:
+      label: UI/UX Features
+      description: Which UI components or patterns would this feature involve?
+      options:
+        - label: Input Forms & Validation
+        - label: Output Display & Formatting
+        - label: Bootstrap Components
+        - label: SweetAlert Notifications
+        - label: Confetti Animations
+        - label: Real-time Feedback
+        - label: Mobile & Responsive Design
+        - label: Accessibility Features
+        - label: Theme & Styling
+        - label: Navigation & Layout
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Critical - Blocking key workflows
+        - High - Significant improvement needed
+        - Medium - Nice to have enhancement
+        - Low - Minor convenience feature
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: How complex do you think this feature might be to implement?
+      options:
+        - Simple - Minor UI change or configuration option
+        - Moderate - New component or algorithm
+        - Complex - Major architectural change
+        - Very Complex - Fundamental system redesign
+        - Unknown - Unsure of implementation complexity
+    validations:
+      required: false
+
+  - type: textarea
+    id: ui-mockup
+    attributes:
+      label: UI/UX Design Ideas
+      description: Describe or sketch how this feature would look and feel
+      placeholder: |
+        Describe the visual design and user interaction:
+        
+        **Visual Design:**
+        - Layout changes
+        - New buttons or controls
+        - Color scheme or theme
+        - Animation effects
+        
+        **User Interaction:**
+        - How users would trigger the feature
+        - Expected feedback (success/error)
+        - Animation or notification style
+        
+        You can paste mockups or sketches directly into this field.
+    validations:
+      required: false
+
+  - type: textarea
+    id: example-inputs
+    attributes:
+      label: Example Test Cases
+      description: Provide example inputs that demonstrate the feature
+      placeholder: |
+        **Example Input 1:**
+        Input: "A man, a plan, a canal: Panama"
+        Expected Result: True (palindrome)
+        Current Behavior: May not handle punctuation
+        
+        **Example Input 2:**
+        Input: "12321"
+        Expected Result: True (numeric palindrome)
+        Current Behavior: Feature doesn't exist
+        
+        **Example Input 3:**
+        Input: "Was it a car or a cat I saw?"
+        Expected Result: True (sentence palindrome)
+        Current Behavior: Works/Doesn't work
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What conditions must be met for this feature to be considered complete?
+      placeholder: |
+        Define clear, testable criteria that indicate when this feature is done:
+        
+        - [ ] Feature requirement 1
+        - [ ] Feature requirement 2
+        - [ ] Browser compatibility (Chrome, Firefox, Safari, Edge)
+        - [ ] Mobile responsive design
+        - [ ] User feedback/notifications work correctly
+        - [ ] Performance requirement (if applicable)
+        - [ ] Documentation updated
+        - [ ] Testing completed
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered alternative approaches?
+      placeholder: |
+        Describe any alternative solutions or workarounds you've considered.
+        
+        Why do you prefer your proposed solution over these alternatives?
+    validations:
+      required: false
+
+  - type: textarea
+    id: browser-compatibility
+    attributes:
+      label: Browser & Device Compatibility
+      description: Should this feature work on all browsers and devices?
+      placeholder: |
+        **Target Browsers:**
+        - Chrome (latest)
+        - Firefox (latest)
+        - Safari (latest)
+        - Edge (latest)
+        - Mobile browsers
+        
+        **Device Support:**
+        - Desktop
+        - Tablet
+        - Mobile
+        
+        **Accessibility Requirements:**
+        - Keyboard navigation
+        - Screen reader support
+        - Color contrast
+        - ARIA labels
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would be helpful
+      placeholder: |
+        Add any other context, screenshots, mockups, or references that would help understand this feature request.
+        
+        You can paste images directly into this text area.
+        
+        Include links to similar features in other tools if relevant.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Interest
+      description: Would you be interested in contributing to this feature?
+      options:
+        - label: I would like to help implement this feature
+        - label: I can provide testing and feedback
+        - label: I can help with documentation
+        - label: I can help with UI/UX design
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues and discussions for similar requests
+          required: true
+        - label: I have provided a clear problem statement and proposed solution
+          required: true
+        - label: I have considered the user experience and browser compatibility
+          required: true
+        - label: This feature aligns with TacoCatRadar's goals as a palindrome detection web app
+          required: true

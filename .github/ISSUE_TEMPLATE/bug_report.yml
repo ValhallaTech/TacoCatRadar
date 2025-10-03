@@ -1,0 +1,213 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with TacoCatRadar
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🐛 Bug Report
+        
+        Thank you for reporting a bug in TacoCatRadar! Please provide detailed information to help us identify and fix the issue.
+        
+        **Before submitting:**
+        - Search existing issues to avoid duplicates
+        - Ensure you're using the latest version of TacoCatRadar
+        - Test in a clean browser environment without extensions
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: Describe the bug in detail...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the issue
+      placeholder: |
+        1. Enter text "A man, a plan, a canal: Panama" into the input box
+        2. Click the "Flip It" button
+        3. See error or unexpected behavior...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: Describe what should have happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: Describe what actually happened...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which TacoCatRadar component is affected?
+      options:
+        - Palindrome Detection Logic
+        - String Reversal Function
+        - UI/Bootstrap Components
+        - SweetAlert Notifications
+        - Confetti Animations
+        - Backend C# Service
+        - Form Validation
+        - Real-time String Processing
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: |
+        Please provide your environment information
+      value: |
+        **Operating System:** 
+        **Browser:** 
+        **Browser Version:** 
+        **TacoCatRadar Version/Commit:** 
+        **.NET Version (if backend issue):** 
+        **Visual Studio Version (if building locally):** 
+        **Yarn Version (if dependency issue):** 
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: test-input
+    attributes:
+      label: Test Input
+      description: What string/input were you testing with when the bug occurred?
+      placeholder: |
+        **Input String:** "Taco Cat"
+        **Expected Result:** Should detect palindrome
+        **Actual Result:** Shows "Nope. Palindrome Failz..."
+        
+        **Additional Test Cases:**
+        - "racecar" - works/doesn't work
+        - "A man, a plan, a canal: Panama" - works/doesn't work
+    validations:
+      required: false
+
+  - type: textarea
+    id: javascript-errors
+    attributes:
+      label: JavaScript Console Errors
+      description: Include any error messages from the browser console (F12)
+      placeholder: |
+        ```
+        Paste JavaScript console errors here
+        ```
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: backend-errors
+    attributes:
+      label: Backend/C# Error Messages
+      description: Include relevant C# error messages or stack traces (if applicable)
+      placeholder: |
+        ```
+        Paste C# error messages or stack traces here
+        ```
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ui-components
+    attributes:
+      label: Bootstrap/UI Components (if UI issue)
+      description: Which UI components are affected?
+      options:
+        - label: Navigation/Menu
+        - label: Input Box/Form Controls
+        - label: Output Display
+        - label: Buttons ("Flip It" button)
+        - label: Animations/Confetti
+        - label: Alert Notifications (SweetAlert)
+        - label: Layout/Responsive Design
+        - label: Theme/Styling
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical - Core palindrome detection broken
+        - High - Major functionality broken
+        - Medium - Some functionality impacted
+        - Low - Minor issue/cosmetic
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this issue occur?
+      options:
+        - Always - 100% of the time
+        - Often - More than 50% of the time
+        - Sometimes - Less than 50% of the time
+        - Rarely - Very infrequent
+        - Once - Happened only once
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: Any temporary workarounds you've found
+      placeholder: Describe any workarounds or temporary solutions...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Screenshots, browser console output, or other context
+      placeholder: |
+        Add any other context about the problem here.
+        
+        Screenshots can be pasted directly into this text area.
+        
+        Include browser console logs if relevant (press F12 to open developer tools).
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I have provided all required environment information
+          required: true
+        - label: I have tested with the latest version of TacoCatRadar
+          required: true
+        - label: I have checked the browser console for JavaScript errors
+          required: true
