@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 General Discussion & Questions
+    url: https://github.com/ValhallaTech/TacoCatRadar/discussions
+    about: Ask questions, share ideas, and discuss TacoCatRadar with the community
+  - name: 📖 Repository Wiki
+    url: https://github.com/ValhallaTech/TacoCatRadar/wiki
+    about: Browse documentation, guides, and technical information
+  - name: 🏗️ Contributing Guidelines
+    url: https://github.com/ValhallaTech/TacoCatRadar/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute to TacoCatRadar development
+  - name: 🔗 ValhallaTech Organization
+    url: https://github.com/ValhallaTech
+    about: Explore other ValhallaTech projects and repositories

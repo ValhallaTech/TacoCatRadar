@@ -1,0 +1,331 @@
+name: 📚 Documentation Request
+description: Request improvements to TacoCatRadar documentation
+title: "[DOCS] "
+labels: ["documentation", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 📚 Documentation Request
+        
+        Thank you for helping improve TacoCatRadar documentation! Clear documentation helps users understand palindrome detection and makes contributing easier.
+        
+        **Documentation Areas:**
+        - **User Guides** - How to use the palindrome detection features
+        - **Developer Guides** - Technical documentation for contributors
+        - **Code Documentation** - Comments and inline documentation
+        - **Architecture Documentation** - System design and structure
+        - **Setup/Installation** - Getting started with development
+        - **API Documentation** - Backend service documentation
+
+  - type: dropdown
+    id: documentation-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation improvement is needed?
+      options:
+        - New Documentation - Create missing documentation
+        - Update Existing - Improve or correct existing documentation  
+        - Code Comments - Add or improve inline code comments
+        - Code Examples - Add or improve code samples
+        - README Updates - Improve repository README
+        - Tutorials/Guides - Step-by-step instructional content
+        - Architecture/Design - Technical architecture documentation
+        - Setup/Installation - Development environment setup
+        - Troubleshooting - Problem resolution guides
+        - FAQ/Knowledge Base - Frequently asked questions
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target-audience
+    attributes:
+      label: Target Audience
+      description: Who is the primary audience for this documentation?
+      options:
+        - End Users - People using the palindrome detector
+        - Web Developers - Frontend developers working with JavaScript/HTML/CSS
+        - Backend Developers - Developers working with C#/ASP.NET
+        - Contributors - Open source contributors
+        - Students/Learners - People learning web development
+        - DevOps/Deployment - People deploying or hosting the app
+    validations:
+      required: true
+
+  - type: textarea
+    id: documentation-summary
+    attributes:
+      label: Documentation Request Summary
+      description: Brief description of the documentation needed
+      placeholder: Describe what documentation is missing, unclear, or needs improvement...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content-area
+    attributes:
+      label: Content Area
+      description: Which TacoCatRadar area does this documentation cover?
+      options:
+        - Frontend JavaScript (jQuery, SweetAlert, Confetti.js)
+        - Backend C# (Palindrome Service)
+        - User Guide (How to use the app)
+        - Setup/Installation (Yarn, Visual Studio)
+        - API Documentation (C# service endpoints)
+        - Architecture Overview (System design)
+        - Bootstrap UI Components
+        - String Processing Algorithms
+        - Troubleshooting & Support
+        - Contributing Guidelines
+        - Testing & Quality Assurance
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current Documentation State
+      description: What documentation currently exists and what are its limitations?
+      placeholder: |
+        **Existing Documentation:**
+        - Location: (URL, file path, or "None exists")
+        - Current Content: (Brief description of what's there)
+        - Format: (Markdown, code comments, etc.)
+        - Last Updated: (If known)
+        
+        **Current Limitations:**
+        - Missing Information: (What's not covered)
+        - Outdated Content: (What needs updating)
+        - Clarity Issues: (What's confusing or unclear)
+        - Technical Accuracy: (Any errors or inaccuracies)
+        - Accessibility: (Hard to find, poor organization)
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-content
+    attributes:
+      label: Desired Documentation Content
+      description: Detailed description of what documentation should be created or improved
+      placeholder: |
+        **Content Requirements:**
+        - Key Topics: (Main subjects to cover)
+        - Detail Level: (Overview, detailed, comprehensive)
+        - Examples Needed: (Code samples, usage examples)
+        - Diagrams/Visuals: (Screenshots, flowcharts, architecture diagrams)
+        - Prerequisites: (Required knowledge or setup)
+        
+        **Structure Suggestions:**
+        - Logical organization and flow
+        - Section headings and subsections
+        - Cross-references to related documentation
+        - Integration with existing docs
+        
+        **Special Requirements:**
+        - Code syntax highlighting
+        - Interactive examples
+        - Step-by-step instructions
+        - Video tutorials (if applicable)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: frontend-topics
+    attributes:
+      label: Frontend JavaScript Topics
+      description: Which frontend topics should be documented?
+      options:
+        - label: jQuery usage and event handling
+        - label: SweetAlert notification configuration
+        - label: Confetti.js animation setup
+        - label: DOM manipulation and element selection
+        - label: String reversal algorithm (fncReverse02)
+        - label: Palindrome detection logic
+        - label: Form validation and input handling
+        - label: Real-time string processing
+        - label: Browser compatibility notes
+        - label: Performance optimization tips
+
+  - type: checkboxes
+    id: backend-topics
+    attributes:
+      label: Backend C# Topics
+      description: Which backend topics should be documented?
+      options:
+        - label: ASP.NET project structure
+        - label: C# palindrome detection service
+        - label: String normalization logic
+        - label: API endpoints (if applicable)
+        - label: Configuration settings
+        - label: Error handling and logging
+        - label: Testing strategies
+        - label: Performance considerations
+        - label: Visual Studio setup and build process
+
+  - type: checkboxes
+    id: ui-topics
+    attributes:
+      label: UI/UX Documentation Topics
+      description: Which UI/UX aspects should be documented?
+      options:
+        - label: Bootstrap component usage
+        - label: Responsive design implementation
+        - label: CSS styling and customization
+        - label: Accessibility features
+        - label: Mobile-friendly design
+        - label: Animation and visual effects
+        - label: User interaction patterns
+        - label: Color scheme and branding
+
+  - type: checkboxes
+    id: setup-topics
+    attributes:
+      label: Setup & Installation Topics
+      description: Which setup aspects should be documented?
+      options:
+        - label: Visual Studio installation and configuration
+        - label: Yarn package manager setup
+        - label: Node.js version requirements
+        - label: NuGet package installation
+        - label: Project structure explanation
+        - label: Building and running the application
+        - label: Deployment instructions
+        - label: Troubleshooting common setup issues
+
+  - type: textarea
+    id: code-examples
+    attributes:
+      label: Code Examples Needed
+      description: What specific code examples would be helpful?
+      placeholder: |
+        **Example 1:**
+        - Topic: How to add a new string processing function
+        - Code snippet showing: Function definition and integration
+        - Language: JavaScript
+        
+        **Example 2:**
+        - Topic: How to customize SweetAlert notifications
+        - Code snippet showing: Configuration options
+        - Language: JavaScript
+        
+        **Example 3:**
+        - Topic: How to modify the palindrome detection algorithm
+        - Code snippet showing: Algorithm logic
+        - Language: C# or JavaScript
+    validations:
+      required: false
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Documentation Priority
+      description: How urgent is this documentation need?
+      options:
+        - Critical - Blocking user adoption or contributions
+        - High - Significantly impacting user experience
+        - Medium - Important but workarounds exist
+        - Low - Nice to have improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact-assessment
+    attributes:
+      label: Impact Assessment
+      description: How would this documentation improvement benefit users and the project?
+      placeholder: |
+        **User Benefits:**
+        - Improved understanding of how to use the app
+        - Easier onboarding for new contributors
+        - Reduced confusion and support requests
+        - Better learning resource for students
+        
+        **Project Benefits:**
+        - More contributions from the community
+        - Higher code quality through better understanding
+        - Professional appearance and credibility
+        - Easier maintenance and updates
+        
+        **Estimated Impact:**
+        - Number of users affected
+        - Complexity reduction
+        - Time savings
+    validations:
+      required: false
+
+  - type: textarea
+    id: similar-examples
+    attributes:
+      label: Reference Examples
+      description: Examples of similar documentation done well in other projects
+      placeholder: |
+        **Good Documentation Examples:**
+        - Project/Tool Name: [URL or description]
+          What makes it good: [Specific qualities]
+          Applicable aspects: [What we could adapt]
+        
+        **Style and Format Preferences:**
+        - Documentation style preferences (formal, casual, tutorial-based)
+        - Format preferences (markdown, interactive, video)
+        - Code sample style (inline comments, separate files)
+        - Visual aids preferences (diagrams, screenshots, GIFs)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution-interest
+    attributes:
+      label: Contribution Interest
+      description: How would you like to contribute to this documentation?
+      options:
+        - label: I can write the initial draft
+        - label: I can provide content review and feedback
+        - label: I can provide technical accuracy review
+        - label: I can help with code examples and samples
+        - label: I can help with screenshots and diagrams
+        - label: I can provide subject matter expertise
+        - label: I would prefer someone else create this documentation
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would help with this documentation request
+      placeholder: |
+        **Related Issues:**
+        - Links to related GitHub issues
+        - User questions or confusion points
+        - Community discussions
+        - Feature requests that need documentation
+        
+        **Resources Available:**
+        - Existing content that could be referenced
+        - Subject matter experts who could help
+        - Related documentation in other projects
+        - User feedback or common questions
+        
+        **Constraints and Considerations:**
+        - Timeline constraints or deadlines
+        - Format or platform requirements
+        - Target skill level of readers
+        - Translation or internationalization needs
+        
+        You can attach files, screenshots, or mockups to help illustrate your documentation request.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing documentation and issues to avoid duplicates
+          required: true
+        - label: I have clearly described the documentation gap and desired outcome
+          required: true
+        - label: I have identified the target audience and use cases for this documentation
+          required: true
+        - label: I understand this is for improving TacoCatRadar documentation
+          required: true
