@@ -1,5 +1,11 @@
 {
+  "name": "TacoCatRadar",
+  "packageManager": "yarn@4.10.3",
   "dependencies": {
-    "confetti-js": "^0.0.18"
+    "bootstrap": "4.5.3",
+    "confetti-js": "^0.0.18",
+    "jquery": "3.5.1",
+    "popper.js": "1.16.1",
+    "sweetalert": "^2.1.2"
   }
 }
