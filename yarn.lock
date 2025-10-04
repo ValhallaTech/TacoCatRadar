@@ -1116,6 +1116,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.11.8":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: 10c0/4681e682abc006d25eb380d0cf3efc7557043f53b6aea7a5057d0d1e7df849a00e281cd8ea79c902a35a414d7919621fc2ba293ecec05f413598e0b23d5a1e63
+  languageName: node
+  linkType: hard
+
 "@swc/core-darwin-arm64@npm:1.13.20":
   version: 1.13.20
   resolution: "@swc/core-darwin-arm64@npm:1.13.20"
@@ -1261,12 +1268,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "TacoCatRadar@workspace:."
   dependencies:
-    bootstrap: "npm:4.5.3"
-    confetti-js: "npm:^0.0.18"
-    jquery: "npm:3.5.1"
+    "@popperjs/core": "npm:^2.11.8"
+    bootstrap: "npm:^5.3.3"
+    canvas-confetti: "npm:^1.9.3"
     parcel: "npm:^2.16.0"
-    popper.js: "npm:1.16.1"
-    sweetalert: "npm:^2.1.2"
+    sweetalert2: "npm:^11.14.5"
   languageName: unknown
   linkType: soft
 
@@ -1339,13 +1345,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:4.5.3":
-  version: 4.5.3
-  resolution: "bootstrap@npm:4.5.3"
+"bootstrap@npm:^5.3.3":
+  version: 5.3.8
+  resolution: "bootstrap@npm:5.3.8"
   peerDependencies:
-    jquery: 1.9.1 - 3
-    popper.js: ^1.16.1
-  checksum: 10c0/3f5e4b05c5256b0983bb52a4effd87bb2383a5c3aea29d2520040f434d8add5328cddf531abec536be5205323d5bf743006ed9bf7d476fa863bb1d49ae780a77
+    "@popperjs/core": ^2.11.8
+  checksum: 10c0/0039a9df2c3e7bfa04f1abca199c299ff3b75869d578c0cb1721c6f1f203c91531788a5631ecbee01513481979314d0e4ba0d90c2011e6ce18fc2e0bc93e18d9
   languageName: node
   linkType: hard
 
@@ -1409,6 +1414,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"canvas-confetti@npm:^1.9.3":
+  version: 1.9.3
+  resolution: "canvas-confetti@npm:1.9.3"
+  checksum: 10c0/94c6f16591660d5ed4a48afb8da65902826ce6b38edc7644d62521aa9bf9ef5b950aa4396e980e7fe0a38e5f41a991a6d984721412a54c9fba4de3682c1eead0
+  languageName: node
+  linkType: hard
+
 "chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
@@ -1460,13 +1472,6 @@ __metadata:
   version: 12.1.0
   resolution: "commander@npm:12.1.0"
   checksum: 10c0/6e1996680c083b3b897bfc1cfe1c58dfbcd9842fd43e1aaf8a795fbc237f65efcc860a3ef457b318e73f29a4f4a28f6403c3d653d021d960e4632dd45bde54a9
-  languageName: node
-  linkType: hard
-
-"confetti-js@npm:^0.0.18":
-  version: 0.0.18
-  resolution: "confetti-js@npm:0.0.18"
-  checksum: 10c0/06dd454eab703a72e0189a2923bee22dc54adfff73fb99075e6c3202f18faf40aef0d081c9993b7acc640949d80306d93b433d228a9683be93f2790427304cef
   languageName: node
   linkType: hard
 
@@ -1573,13 +1578,6 @@ __metadata:
   version: 2.0.3
   resolution: "err-code@npm:2.0.3"
   checksum: 10c0/b642f7b4dd4a376e954947550a3065a9ece6733ab8e51ad80db727aaae0817c2e99b02a97a3d6cecc648a97848305e728289cf312d09af395403a90c9d4d8a66
-  languageName: node
-  linkType: hard
-
-"es6-object-assign@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "es6-object-assign@npm:1.1.0"
-  checksum: 10c0/11c165ae16866aca897dee9b689402f0e871589e859809343ef9e0fdd067133684db16fd15abdba2a99e7319222b9f43e6b747baabb909cee9d0ecbac8deebee
   languageName: node
   linkType: hard
 
@@ -1787,13 +1785,6 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 10c0/6acc10d139eaefdbe04d2f679e6191b3abf073f111edf10b1de5302c97ec93fffeb2fdd8681ed17f16268aa9dd4f8c588ed9d1d3bffbbfa6e8bf897cbb3149b9
-  languageName: node
-  linkType: hard
-
-"jquery@npm:3.5.1":
-  version: 3.5.1
-  resolution: "jquery@npm:3.5.1"
-  checksum: 10c0/93cc01405c47d5c1e151604066afc58f68ee3f2f7404d949eef3f9c34c77e484825ddfff68bbbe84e8b5c4844743f59e29a00e944e9ef24ccaeacd11af867c82
   languageName: node
   linkType: hard
 
@@ -2312,13 +2303,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"popper.js@npm:1.16.1":
-  version: 1.16.1
-  resolution: "popper.js@npm:1.16.1"
-  checksum: 10c0/1c1a826f757edb5b8c2049dfd7a9febf6ae1e9d0e51342fc715b49a0c1020fced250d26484619883651e097c5764bbcacd2f31496e3646027f079dd83e072681
-  languageName: node
-  linkType: hard
-
 "postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
@@ -2330,13 +2314,6 @@ __metadata:
   version: 5.0.0
   resolution: "proc-log@npm:5.0.0"
   checksum: 10c0/bbe5edb944b0ad63387a1d5b1911ae93e05ce8d0f60de1035b218cdcceedfe39dbd2c697853355b70f1a090f8f58fe90da487c85216bf9671f9499d1a897e9e3
-  languageName: node
-  linkType: hard
-
-"promise-polyfill@npm:^6.0.2":
-  version: 6.1.0
-  resolution: "promise-polyfill@npm:6.1.0"
-  checksum: 10c0/8fa1172b1b50efbc43f5eb8772e6a526ef70b9856f3d49172c8bea0ccee4413b29eb5d7f8b44015fe43b2d77a9db16d4c49d337b48b218661f92e5ab1c1fc672
   languageName: node
   linkType: hard
 
@@ -2503,13 +2480,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sweetalert@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "sweetalert@npm:2.1.2"
-  dependencies:
-    es6-object-assign: "npm:^1.1.0"
-    promise-polyfill: "npm:^6.0.2"
-  checksum: 10c0/a4ae074efc40375d74f499242ec02ff4cb8a19b031e666a4324438fdc655f6d0fa78b600160b374cc78ae6639bd3e0f4a697a46869d75575ece7c3522d7c093a
+"sweetalert2@npm:^11.14.5":
+  version: 11.23.0
+  resolution: "sweetalert2@npm:11.23.0"
+  checksum: 10c0/1ad95b7ce0d355e8d021998c6576bbe3f6f9796fa886a8b33b6be28349061ba0942bb567b49bce926d8161db43fb2c94a908b3fb2f12883f7b50eea73f420b32
   languageName: node
   linkType: hard
 

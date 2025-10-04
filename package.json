@@ -7,11 +7,10 @@
     "clean": "rm -rf dist .parcel-cache"
   },
   "dependencies": {
-    "bootstrap": "4.5.3",
-    "confetti-js": "^0.0.18",
-    "jquery": "3.5.1",
-    "popper.js": "1.16.1",
-    "sweetalert": "^2.1.2"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "canvas-confetti": "^1.9.3",
+    "sweetalert2": "^11.14.5"
   },
   "devDependencies": {
     "parcel": "^2.16.0"
