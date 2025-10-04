@@ -1,11 +1,19 @@
 {
   "name": "TacoCatRadar",
   "packageManager": "yarn@4.10.3",
+  "scripts": {
+    "dev": "parcel serve index.html Solve.html Code.html",
+    "build": "parcel build index.html Solve.html Code.html --dist-dir dist",
+    "clean": "rm -rf dist .parcel-cache"
+  },
   "dependencies": {
     "bootstrap": "4.5.3",
     "confetti-js": "^0.0.18",
     "jquery": "3.5.1",
     "popper.js": "1.16.1",
     "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
   }
 }
