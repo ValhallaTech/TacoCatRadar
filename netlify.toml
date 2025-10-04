@@ -4,10 +4,10 @@
 [build]
   # Build command
   command = "yarn install && yarn build"
-  
+
   # Publish directory (output folder)
   publish = "dist"
-  
+
   # Base directory for build
   base = "."
 
@@ -29,22 +29,22 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    
+
 # Cache static assets (JavaScript)
 [[headers]]
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    
+
 # Cache static assets (CSS)
 [[headers]]
   for = "/*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    
+
 # Cache images
 [[headers]]
-  for = "/Images/*"
+  for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
