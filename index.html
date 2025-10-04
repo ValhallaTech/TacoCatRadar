@@ -10,10 +10,69 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        .title-word-art {
+            font-family: 'Bangers', cursive;
+            font-size: 4rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle-art {
+            font-family: 'Righteous', cursive;
+            color: #764ba2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Material Design Navbar */
+        .navbar-material {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-material .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-material .nav-link:hover {
+            color: #fff !important;
+            transform: translateY(-2px);
+        }
+        
+        .navbar-material .nav-link.active::after,
+        .navbar-material .nav-item.active .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: #f093fb;
+            border-radius: 2px;
+        }
+        
+        .navbar-material .navbar-brand {
+            color: #fff !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-material static-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html">Taco Cat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,12 +100,12 @@
     </nav>
     <!-- Page Content -->
     <main>
-        <section id="sectionTitle">
+        <section id="sectionTitle" class="py-5">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h1>TACO CAT! Radar!</h1>
-                        <h5>No sir! Away! A papaya war is on!</h5>
+                        <h1 class="title-word-art">TACO CAT! Radar!</h1>
+                        <h5 class="subtitle-art">No sir! Away! A papaya war is on!</h5>
                     </div>
                 </div>
             </div>
