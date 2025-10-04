@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "parcel serve index.html Solve.html Code.html",
     "build": "parcel build index.html Solve.html Code.html --dist-dir dist",
-    "clean": "rm -rf dist .parcel-cache"
+    "clean": "rm -rf dist .parcel-cache",
+    "lint": "eslint Scripts/**/*.js"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -13,6 +14,7 @@
     "sweetalert2": "^11.14.5"
   },
   "devDependencies": {
+    "eslint": "^9.17.0",
     "parcel": "^2.16.0"
   }
 }
