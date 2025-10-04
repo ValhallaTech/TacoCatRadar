@@ -30,19 +30,32 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     
-# Cache static assets
+# Cache static assets (JavaScript)
 [[headers]]
-  for = "/dist/*.js"
+  for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
     
+# Cache static assets (CSS)
 [[headers]]
-  for = "/dist/*.css"
+  for = "/*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
     
+# Cache images
 [[headers]]
-  for = "/images/*"
+  for = "/Images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache fonts
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.ttf"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
