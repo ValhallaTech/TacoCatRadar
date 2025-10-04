@@ -123,7 +123,7 @@ netlify deploy --prod
   base = "."                              # Project root
 
 [build.environment]
-  NODE_VERSION = "18"                     # Node.js version
+  NODE_VERSION = "22"                     # Node.js 22 LTS (22.20.0 - latest)
 ```
 
 ### Redirects

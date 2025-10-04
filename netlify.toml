@@ -11,9 +11,9 @@
   # Base directory for build
   base = "."
 
-# Node.js version
+# Node.js version (22 = latest LTS - 22.20.0)
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
 
 # Redirects and rewrites
 [[redirects]]
