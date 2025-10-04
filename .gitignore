@@ -138,7 +138,6 @@ _TeamCity*
 
 # AxoCover is a Code Coverage Tool
 .axoCover/*
-!.axoCover/settings.json
 
 # Visual Studio code coverage results
 *.coverage
@@ -354,13 +353,6 @@ MigrationBackup/
 
 # Yarn Modern
 .yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
-package-lock.json
 
 # Parcel build output
 dist/
@@ -371,7 +363,5 @@ dist/
 .env.local
 .env.*.local
 
-# Old vendor files (now bundled by Parcel)
-Content/bootstrap*.css
-Content/bootstrap*.map
-Content/animate.min.css
+# Netlify
+.netlify/
