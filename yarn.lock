@@ -1406,6 +1406,7 @@ __metadata:
     canvas-confetti: "npm:^1.9.3"
     eslint: "npm:^9.17.0"
     parcel: "npm:^2.16.0"
+    prismjs: "npm:^1.29.0"
     sweetalert2: "npm:^11.14.5"
   languageName: unknown
   linkType: soft
@@ -2861,6 +2862,13 @@ __metadata:
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
   checksum: 10c0/b00d617431e7886c520a6f498a2e14c75ec58f6d93ba48c3b639cf241b54232d90daa05d83a9e9b9fef6baa63cb7e1e4602c2372fea5bc169668401eb127d0cd
+  languageName: node
+  linkType: hard
+
+"prismjs@npm:^1.29.0":
+  version: 1.30.0
+  resolution: "prismjs@npm:1.30.0"
+  checksum: 10c0/f56205bfd58ef71ccfcbcb691fd0eb84adc96c6ff21b0b69fc6fdcf02be42d6ef972ba4aed60466310de3d67733f6a746f89f2fb79c00bf217406d465b3e8f23
   languageName: node
   linkType: hard
 

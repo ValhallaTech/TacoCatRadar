@@ -1,4 +1,13 @@
-﻿// Import dependencies
+// Import Prism.js for syntax highlighting
+import Prism from 'prismjs';
+import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/components/prism-javascript';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../content/main.css';
+
+// The actual code from Palindrome.js as a string
+const palindromeCode = `// Import dependencies
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import confetti from 'canvas-confetti';
@@ -63,4 +72,11 @@ document.getElementById("inputBox").addEventListener("keypress", function(event)
         event.preventDefault();
         checkPalindrome(event);
     }
-});
+});`;
+
+// Display the code with syntax highlighting
+const codeElement = document.getElementById('palindrome-code');
+if (codeElement) {
+    codeElement.textContent = palindromeCode;
+    Prism.highlightElement(codeElement);
+}

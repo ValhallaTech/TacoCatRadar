@@ -2,46 +2,34 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Coder Foundry MiniSite Template</title>
-
+    <meta name="description" content="TacoCat Palindrome Challenge">
+    <meta name="author" content="Fred Smith III">
+    <title>TacoCat! Radar! - Solve</title>
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
+            <a class="navbar-brand" href="./index.html">Taco Cat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/Index.html">
-                            Home
-                        </a>
+                        <a class="nav-link" href="./solve.html">Solve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
+                        <a class="nav-link" href="./code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Code.html">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
+                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank">GitHub</a>
                     </li>
                 </ul>
             </div>
@@ -49,18 +37,88 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">The Exercise</h1>
-                <p class="lead">This page will display your JS exercise</p>
-                <ul class="list-unstyled">
-                    <li>The Javascript Exercise</li>
-                    <li>Is placed on this page</li>
-                </ul>
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="text-center mb-4">The Palindrome Challenge</h1>
+                
+                <section class="mb-5">
+                    <h2>What is a Palindrome?</h2>
+                    <p class="lead">
+                        A palindrome is a word, phrase, number, or sequence of characters that reads the same backward as forward.
+                    </p>
+                    <p>
+                        Classic examples include words like <strong>"racecar"</strong>, <strong>"level"</strong>, and <strong>"madam"</strong>. 
+                        But palindromes can also be entire phrases, like the title of this project: <strong>"Taco Cat"</strong>!
+                    </p>
+                </section>
+
+                <section class="mb-5">
+                    <h2>The Exercise</h2>
+                    <p>
+                        This coding challenge demonstrates how to detect palindromes using JavaScript. The application:
+                    </p>
+                    <ul>
+                        <li>Takes user input from a text field</li>
+                        <li>Reverses the string character-by-character using a for loop</li>
+                        <li>Compares the original string to its reversed version</li>
+                        <li>Displays the reversed string in an output field</li>
+                        <li>Provides visual feedback using SweetAlert2 modals and confetti celebration</li>
+                    </ul>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Learning Goals</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>JavaScript Concepts</h4>
+                            <ul>
+                                <li>String manipulation</li>
+                                <li>For loops and iteration</li>
+                                <li>DOM manipulation</li>
+                                <li>Event listeners (click and keypress)</li>
+                                <li>Conditional logic (if/else)</li>
+                                <li>ES6 modules and imports</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Modern Web Development</h4>
+                            <ul>
+                                <li>Bootstrap 5 for responsive design</li>
+                                <li>Parcel bundler for build optimization</li>
+                                <li>Yarn for package management</li>
+                                <li>Modern JavaScript libraries (SweetAlert2, canvas-confetti)</li>
+                                <li>Form handling and validation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Try It Yourself</h2>
+                    <p>
+                        Head over to the <a href="./index.html" class="fw-bold">Home page</a> to test the palindrome detector!
+                    </p>
+                    <div class="alert alert-info">
+                        <h5 class="alert-heading">Palindrome Examples to Try:</h5>
+                        <ul class="mb-0">
+                            <li><strong>tacocat</strong> - The classic!</li>
+                            <li><strong>racecar</strong> - A speedy palindrome</li>
+                            <li><strong>A man a plan a canal Panama</strong> - A famous phrase (note: currently case-sensitive)</li>
+                            <li><strong>Was it a car or a cat I saw</strong> - Another classic phrase</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2>View the Code</h2>
+                    <p>
+                        Want to see how it works? Check out the <a href="./code.html" class="fw-bold">Code page</a> to view the complete JavaScript implementation with syntax highlighting.
+                    </p>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Parcel bundled JavaScript with all dependencies -->
     <script type="module" src="./Scripts/Palindrome.js"></script>

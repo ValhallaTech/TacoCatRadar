@@ -100,6 +100,7 @@
     <Content Include="Scripts\esm\popper-utils.js.map" />
     <Content Include=".editorconfig" />
     <Content Include=".yarnrc.yml" />
+    <Content Include=".eslintrc.json" />
     <None Include="bundleconfig.json" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />

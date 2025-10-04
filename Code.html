@@ -1,47 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Coder Foundry MiniSite Template</title>
-
+    <meta name="description" content="TacoCat Palindrome Challenge">
+    <meta name="author" content="Fred Smith III">
+    <title>TacoCat! Radar! - Code</title>
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
+            <a class="navbar-brand" href="./index.html">Taco Cat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./solve.html">Solve</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/Index.html">
-                            Home
-                        </a>
+                        <a class="nav-link" href="./code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
-                    </li>
-                    <li class="nav-item>
-                        <a class="nav-link" href="/Code.html">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
+                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank">GitHub</a>
                     </li>
                 </ul>
             </div>
@@ -49,21 +37,70 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">This Page shows your JS code</h1>
-                <p class="lead">You need to use a Syntax Highlighter - Prism.js is default</p>
-                <ul class="list-unstyled">
-                    <li>Code with highlighter</li>
-                    <li>Will display on this page</li>
-                </ul>
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="text-center mb-4">Palindrome Detector - JavaScript Code</h1>
+                
+                <section class="mb-4">
+                    <h2>Implementation</h2>
+                    <p class="lead">
+                        Below is the complete JavaScript code that powers the palindrome detector. 
+                        The code uses modern ES6 modules, event listeners, and popular libraries for enhanced user experience.
+                    </p>
+                </section>
+
+                <section class="mb-4">
+                    <h3>Key Features</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><strong>String Reversal:</strong> Manual character-by-character reversal using a for loop</li>
+                                <li><strong>Event Handling:</strong> Supports both button click and Enter key</li>
+                                <li><strong>Visual Feedback:</strong> SweetAlert2 modals for success/error messages</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><strong>Celebration Effect:</strong> Canvas-confetti animation for palindromes</li>
+                                <li><strong>DOM Manipulation:</strong> Real-time output display</li>
+                                <li><strong>Modern JavaScript:</strong> ES6 imports, arrow functions, const/let</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h3>Source Code</h3>
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <strong>Scripts/Palindrome.js</strong>
+                        </div>
+                        <div class="card-body p-0">
+                            <pre class="m-0"><code id="palindrome-code" class="language-javascript"></code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h3>Try It Out</h3>
+                    <p>
+                        Ready to test the palindrome detector? Head over to the <a href="./index.html" class="fw-bold">Home page</a> and give it a try!
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Learn More</h3>
+                    <p>
+                        Want to understand the exercise better? Check out the <a href="./solve.html" class="fw-bold">Solve page</a> for a detailed explanation of palindromes and learning goals.
+                    </p>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Parcel bundled JavaScript with all dependencies -->
-    <script type="module" src="./Scripts/Palindrome.js"></script>
+    <!-- Parcel bundled JavaScript with code display -->
+    <script type="module" src="./Scripts/CodeDisplay.js"></script>
 
 </body>
 

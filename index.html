@@ -33,13 +33,7 @@
                         <a class="nav-link" href="./code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post</a>
+                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank">GitHub</a>
                     </li>
                 </ul>
             </div>
@@ -55,30 +49,32 @@
                         <h5>No sir! Away! A papaya war is on!</h5>
                     </div>
                 </div>
-        </div>
-    </section>
-    <section class="align-self-center">
-        <div class="container" id="tacoContainer01">
-            <form>
-                <div class="row">
-                    <div class="col-6 text-center">
-                        <label for="inputBox"></label>
-                        <input type="text" class="shadow p-2 mb-2 bg-white" id="inputBox" />
+            </div>
+        </section>
+        <section class="align-self-center">
+            <div class="container" id="tacoContainer01">
+                <form>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-5 text-center mb-3 mb-md-0">
+                            <label for="inputBox" class="visually-hidden">Enter text</label>
+                            <input type="text" class="form-control shadow p-3 bg-white text-center w-100" id="inputBox" placeholder="Enter a word or phrase" />
+                        </div>
+                        <div class="col-12 col-md-5 text-center">
+                            <label for="outputBox" class="visually-hidden">Reversed text</label>
+                            <input type="text" class="form-control shadow p-3 bg-white text-center w-100" id="outputBox" placeholder="Reversed text will appear here" readonly />
+                        </div>
                     </div>
-                    <div class="col-6 text-center">
-                        <label for="outputBox"></label>
-                        <output type="text" class="shadow p-2 mb-2 bg-white" id="outputBox"></output>
-                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="mt-4">
+            <div class="container" id="tacoContainer02">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-dark" id="btnFlip">Flip It!</button>
                 </div>
-            </form>
-        </div>
-    </section>
-    <br />
-    <div class="container" id="tacoContainer02">
-        <div style="text-align: center;">
-            <button type="submit" class="btn btn-dark" id="btnFlip">Flip It</button>
-        </div>
-    </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Parcel bundled JavaScript with all dependencies -->
     <script type="module" src="./Scripts/Palindrome.js"></script>
