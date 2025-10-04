@@ -2,12 +2,13 @@
   "name": "TacoCatRadar",
   "packageManager": "yarn@4.10.3",
   "scripts": {
-    "dev": "parcel serve index.html Solve.html Code.html",
-    "build": "parcel build index.html Solve.html Code.html --dist-dir dist",
-    "clean": "rm -rf dist .parcel-cache",
+    "dev": "parcel serve index.html solve.html code.html",
+    "build": "parcel build index.html solve.html code.html --dist-dir dist",
+    "clean": "rimraf dist .parcel-cache",
     "lint": "eslint Scripts/**/*.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "canvas-confetti": "^1.9.3",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "^9.17.0",
-    "parcel": "^2.16.0"
+    "parcel": "^2.16.0",
+    "rimraf": "^6.0.1"
   }
 }

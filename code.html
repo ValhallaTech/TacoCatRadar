@@ -7,65 +7,20 @@
     <meta name="description" content="TacoCat Palindrome Challenge">
     <meta name="author" content="Fred Smith III">
     <title>TacoCat! Radar! - Code</title>
+    
+    <!-- Prevent flash of unstyled content -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-bs-theme', savedTheme);
+        })();
+    </script>
+    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&display=swap" rel="stylesheet">
-    <style>
-        .title-word-art {
-            font-family: 'Bangers', cursive;
-            font-size: 4rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-        
-        .subtitle-art {
-            font-family: 'Righteous', cursive;
-            color: #764ba2;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        /* Material Design Navbar */
-        .navbar-material {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-material .nav-link {
-            color: rgba(255, 255, 255, 0.9) !important;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .navbar-material .nav-link:hover {
-            color: #fff !important;
-            transform: translateY(-2px);
-        }
-        
-        .navbar-material .nav-link.active::after,
-        .navbar-material .nav-item.active .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60%;
-            height: 3px;
-            background: #f093fb;
-            border-radius: 2px;
-        }
-        
-        .navbar-material .navbar-brand {
-            color: #fff !important;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -88,7 +43,14 @@
                         <a class="nav-link" href="./code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank">GitHub</a>
+                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank" rel="noopener noreferrer">
+                            GitHub<span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle nav-link" aria-label="Toggle dark mode" title="Toggle dark mode">
+                            <span class="theme-icon"><i class="fa-solid fa-moon"></i></span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -99,10 +61,10 @@
     <main class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <h1 class="text-center mb-4 title-word-art">Palindrome Detector - JavaScript Code</h1>
+                <h1 class="text-center mb-4">Palindrome Detector - JavaScript Code</h1>
                 
                 <section class="mb-4">
-                    <h2 class="subtitle-art">Implementation</h2>
+                    <h2>Implementation</h2>
                     <p class="lead">
                         Below is the complete JavaScript code that powers the palindrome detector. 
                         The code uses modern ES6 modules, event listeners, and popular libraries for enhanced user experience.
@@ -115,14 +77,16 @@
                         <div class="col-md-6">
                             <ul>
                                 <li><strong>String Reversal:</strong> Manual character-by-character reversal using a for loop</li>
+                                <li><strong>Case-Insensitive:</strong> Compares strings regardless of letter case</li>
+                                <li><strong>Input Validation:</strong> Prevents empty or whitespace-only submissions</li>
                                 <li><strong>Event Handling:</strong> Supports both button click and Enter key</li>
-                                <li><strong>Visual Feedback:</strong> SweetAlert2 modals for success/error messages</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul>
+                                <li><strong>Visual Feedback:</strong> SweetAlert2 modals for success/error messages</li>
                                 <li><strong>Celebration Effect:</strong> Canvas-confetti animation for palindromes</li>
-                                <li><strong>DOM Manipulation:</strong> Real-time output display</li>
+                                <li><strong>DOM Manipulation:</strong> Real-time output display with validation states</li>
                                 <li><strong>Modern JavaScript:</strong> ES6 imports, arrow functions, const/let</li>
                             </ul>
                         </div>
@@ -159,6 +123,7 @@
     </main>
 
     <!-- Parcel bundled JavaScript with code display -->
+    <script type="module" src="./Scripts/DarkModeToggle.js"></script>
     <script type="module" src="./Scripts/CodeDisplay.js"></script>
 
 </body>

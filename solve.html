@@ -7,65 +7,20 @@
     <meta name="description" content="TacoCat Palindrome Challenge">
     <meta name="author" content="Fred Smith III">
     <title>TacoCat! Radar! - Solve</title>
+    
+    <!-- Prevent flash of unstyled content -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-bs-theme', savedTheme);
+        })();
+    </script>
+    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&display=swap" rel="stylesheet">
-    <style>
-        .title-word-art {
-            font-family: 'Bangers', cursive;
-            font-size: 4rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-        
-        .subtitle-art {
-            font-family: 'Righteous', cursive;
-            color: #764ba2;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        /* Material Design Navbar */
-        .navbar-material {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-material .nav-link {
-            color: rgba(255, 255, 255, 0.9) !important;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .navbar-material .nav-link:hover {
-            color: #fff !important;
-            transform: translateY(-2px);
-        }
-        
-        .navbar-material .nav-link.active::after,
-        .navbar-material .nav-item.active .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60%;
-            height: 3px;
-            background: #f093fb;
-            border-radius: 2px;
-        }
-        
-        .navbar-material .navbar-brand {
-            color: #fff !important;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -88,7 +43,14 @@
                         <a class="nav-link" href="./code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank">GitHub</a>
+                        <a class="nav-link" href="https://github.com/ValhallaTech/TacoCatRadar" target="_blank" rel="noopener noreferrer">
+                            GitHub<span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle nav-link" aria-label="Toggle dark mode" title="Toggle dark mode">
+                            <span class="theme-icon"><i class="fa-solid fa-moon"></i></span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -120,7 +82,8 @@
                     <ul>
                         <li>Takes user input from a text field</li>
                         <li>Reverses the string character-by-character using a for loop</li>
-                        <li>Compares the original string to its reversed version</li>
+                        <li>Compares the original string to its reversed version (case-insensitive)</li>
+                        <li>Validates input to prevent empty submissions</li>
                         <li>Displays the reversed string in an output field</li>
                         <li>Provides visual feedback using SweetAlert2 modals and confetti celebration</li>
                     </ul>
@@ -137,6 +100,7 @@
                                 <li>DOM manipulation</li>
                                 <li>Event listeners (click and keypress)</li>
                                 <li>Conditional logic (if/else)</li>
+                                <li>Input validation</li>
                                 <li>ES6 modules and imports</li>
                             </ul>
                         </div>
@@ -148,6 +112,8 @@
                                 <li>Yarn for package management</li>
                                 <li>Modern JavaScript libraries (SweetAlert2, canvas-confetti)</li>
                                 <li>Form handling and validation</li>
+                                <li>Accessibility best practices</li>
+                                <li>Dark mode support with CSS variables</li>
                             </ul>
                         </div>
                     </div>
@@ -161,10 +127,11 @@
                     <div class="alert alert-info">
                         <h5 class="alert-heading">Palindrome Examples to Try:</h5>
                         <ul class="mb-0">
-                            <li><strong>tacocat</strong> - The classic!</li>
-                            <li><strong>racecar</strong> - A speedy palindrome</li>
-                            <li><strong>A man a plan a canal Panama</strong> - A famous phrase (note: currently case-sensitive)</li>
-                            <li><strong>Was it a car or a cat I saw</strong> - Another classic phrase</li>
+                            <li><strong>Taco Cat</strong> - The classic! (Now works with mixed case!)</li>
+                            <li><strong>RaceCar</strong> - A speedy palindrome</li>
+                            <li><strong>Level</strong> - Short and sweet</li>
+                            <li><strong>Madam</strong> - A classic single word</li>
+                            <li><strong>Kayak</strong> - Another fun one!</li>
                         </ul>
                     </div>
                 </section>
@@ -180,6 +147,7 @@
     </main>
 
     <!-- Parcel bundled JavaScript with all dependencies -->
+    <script type="module" src="./Scripts/DarkModeToggle.js"></script>
     <script type="module" src="./Scripts/Palindrome.js"></script>
 
 </body>

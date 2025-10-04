@@ -352,7 +352,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-
+# Yarn Modern
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -365,3 +365,8 @@ package-lock.json
 # Parcel build output
 dist/
 .parcel-cache/
+
+# Old vendor files (now bundled by Parcel)
+Content/bootstrap*.css
+Content/bootstrap*.map
+Content/animate.min.css
