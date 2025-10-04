@@ -67,7 +67,7 @@
                     <h2>Implementation</h2>
                     <p class="lead">
                         Below is the complete JavaScript code that powers the palindrome detector. 
-                        The code uses modern ES6 modules, event listeners, and popular libraries for enhanced user experience.
+                        The code uses modern ES6 modules, event listeners, popular libraries, and best practices for production-ready applications.
                     </p>
                 </section>
 
@@ -75,20 +75,96 @@
                     <h3>Key Features</h3>
                     <div class="row">
                         <div class="col-md-6">
+                            <h5>Core Functionality</h5>
                             <ul>
                                 <li><strong>String Reversal:</strong> Manual character-by-character reversal using a for loop</li>
-                                <li><strong>Case-Insensitive:</strong> Compares strings regardless of letter case</li>
+                                <li><strong>Case-Insensitive:</strong> Normalized comparison using toLowerCase()</li>
                                 <li><strong>Input Validation:</strong> Prevents empty or whitespace-only submissions</li>
-                                <li><strong>Event Handling:</strong> Supports both button click and Enter key</li>
+                                <li><strong>Event Handling:</strong> Supports button click, Enter key, and form submit</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
+                            <h5>User Experience</h5>
                             <ul>
-                                <li><strong>Visual Feedback:</strong> SweetAlert2 modals for success/error messages</li>
-                                <li><strong>Celebration Effect:</strong> Canvas-confetti animation for palindromes</li>
-                                <li><strong>DOM Manipulation:</strong> Real-time output display with validation states</li>
-                                <li><strong>Modern JavaScript:</strong> ES6 imports, arrow functions, const/let</li>
+                                <li><strong>Loading States:</strong> Button disables with spinner animation</li>
+                                <li><strong>Visual Feedback:</strong> SweetAlert2 modals for success/error</li>
+                                <li><strong>Celebration:</strong> Canvas-confetti animation for palindromes</li>
+                                <li><strong>Real-time Validation:</strong> Clears error states on user input</li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h5>Modern JavaScript</h5>
+                            <ul>
+                                <li><strong>ES6 Modules:</strong> Import statements for dependencies</li>
+                                <li><strong>Async/Await:</strong> For loading state simulation</li>
+                                <li><strong>Arrow Functions:</strong> Modern function syntax</li>
+                                <li><strong>Const/Let:</strong> Block-scoped variables</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Accessibility</h5>
+                            <ul>
+                                <li><strong>ARIA Labels:</strong> Proper semantic markup</li>
+                                <li><strong>Keyboard Support:</strong> Full keyboard navigation</li>
+                                <li><strong>Live Regions:</strong> Screen reader announcements</li>
+                                <li><strong>Focus Management:</strong> Visual focus indicators</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h3>Architecture Overview</h3>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <strong>?? Project Structure</strong>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                <li><strong>Palindrome.js:</strong> Core logic, validation, and event handlers</li>
+                                <li><strong>DarkModeToggle.js:</strong> Theme switching with localStorage persistence</li>
+                                <li><strong>CodeDisplay.js:</strong> Syntax highlighting for this page</li>
+                                <li><strong>custom.css:</strong> All custom styles with CSS variables for theming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h3>Dependencies</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <strong>Production Libraries</strong>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="mb-0">
+                                        <li>Bootstrap 5.3.3 - UI framework</li>
+                                        <li>SweetAlert2 11.14.5 - Modal alerts</li>
+                                        <li>canvas-confetti 1.9.3 - Celebrations</li>
+                                        <li>Prism.js 1.29.0 - Syntax highlighting</li>
+                                        <li>Font Awesome 6.7.2 - Icons</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <strong>Development Tools</strong>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="mb-0">
+                                        <li>Parcel 2.16.0 - Bundler</li>
+                                        <li>Yarn Modern 4.10.3 - Package manager</li>
+                                        <li>ESLint 9.17.0 - Code quality</li>
+                                        <li>rimraf 6.0.1 - Cross-platform cleanup</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -106,10 +182,38 @@
                 </section>
 
                 <section class="mb-5">
+                    <h3>Code Highlights</h3>
+                    <div class="alert alert-info">
+                        <h5 class="alert-heading">?? Implementation Details</h5>
+                        <ul class="mb-0">
+                            <li><strong>Function Separation:</strong> <code>fncReverse02()</code> handles string reversal logic</li>
+                            <li><strong>Async Function:</strong> <code>checkPalindrome()</code> is async for loading state management</li>
+                            <li><strong>Event Prevention:</strong> <code>event.preventDefault()</code> stops form submission</li>
+                            <li><strong>Validation First:</strong> Checks for empty input before processing</li>
+                            <li><strong>Loading UX:</strong> 300ms delay to ensure spinner is visible</li>
+                            <li><strong>State Management:</strong> CSS classes control visual states (error/success)</li>
+                            <li><strong>Clean Up:</strong> Input event listener clears validation states on typing</li>
+                            <li><strong>Multiple Triggers:</strong> Button click, form submit, and Enter key all work</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-5">
                     <h3>Try It Out</h3>
                     <p>
                         Ready to test the palindrome detector? Head over to the <a href="./index.html" class="fw-bold">Home page</a> and give it a try!
                     </p>
+                    <div class="alert alert-success">
+                        <h5 class="alert-heading">?? Testing Tips</h5>
+                        <ul class="mb-0">
+                            <li>Try submitting empty input to see validation</li>
+                            <li>Test with mixed case: "TaCo CaT"</li>
+                            <li>Use Enter key instead of clicking the button</li>
+                            <li>Toggle dark mode to see neon effects</li>
+                            <li>Watch the loading spinner (appears briefly)</li>
+                            <li>Open DevTools console to see any errors (should be none!)</li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section>

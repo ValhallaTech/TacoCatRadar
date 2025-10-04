@@ -11,17 +11,17 @@ const timeoutDuration = (function(){
 }());
 
 export function microtaskDebounce(fn) {
-  let called = false
+  let called = false;
   return () => {
     if (called) {
-      return
+      return;
     }
-    called = true
+    called = true;
     window.Promise.resolve().then(() => {
-      called = false
-      fn()
-    })
-  }
+      called = false;
+      fn();
+    });
+  };
 }
 
 export function taskDebounce(fn) {
@@ -37,7 +37,7 @@ export function taskDebounce(fn) {
   };
 }
 
-const supportsMicroTasks = isBrowser && window.Promise
+const supportsMicroTasks = isBrowser && window.Promise;
 
 
 /**

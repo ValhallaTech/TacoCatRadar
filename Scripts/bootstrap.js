@@ -19,7 +19,7 @@
       var descriptor = props[i];
       descriptor.enumerable = descriptor.enumerable || false;
       descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
+      if ('value' in descriptor) descriptor.writable = true;
       Object.defineProperty(target, descriptor.key, descriptor);
     }
   }
@@ -72,7 +72,7 @@
 
   function toType(obj) {
     if (obj === null || typeof obj === 'undefined') {
-      return "" + obj;
+      return '' + obj;
     }
 
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
@@ -84,7 +84,7 @@
       delegateType: TRANSITION_END,
       handle: function handle(event) {
         if ($__default['default'](event.target).is(this)) {
-          return event.handleObj.handler.apply(this, arguments); // eslint-disable-line prefer-rest-params
+          return event.handleObj.handler.apply(this, arguments);  
         }
 
         return undefined;
@@ -181,7 +181,7 @@
           var valueType = value && Util.isElement(value) ? 'element' : toType(value);
 
           if (!new RegExp(expectedTypes).test(valueType)) {
-            throw new Error(componentName.toUpperCase() + ": " + ("Option \"" + property + "\" provided type \"" + valueType + "\" ") + ("but expected type \"" + expectedTypes + "\"."));
+            throw new Error(componentName.toUpperCase() + ': ' + ('Option "' + property + '" provided type "' + valueType + '" ') + ('but expected type "' + expectedTypes + '".'));
           }
         }
       }
@@ -237,13 +237,13 @@
   var NAME = 'alert';
   var VERSION = '4.5.3';
   var DATA_KEY = 'bs.alert';
-  var EVENT_KEY = "." + DATA_KEY;
+  var EVENT_KEY = '.' + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $__default['default'].fn[NAME];
   var SELECTOR_DISMISS = '[data-dismiss="alert"]';
-  var EVENT_CLOSE = "close" + EVENT_KEY;
-  var EVENT_CLOSED = "closed" + EVENT_KEY;
-  var EVENT_CLICK_DATA_API = "click" + EVENT_KEY + DATA_API_KEY;
+  var EVENT_CLOSE = 'close' + EVENT_KEY;
+  var EVENT_CLOSED = 'closed' + EVENT_KEY;
+  var EVENT_CLICK_DATA_API = 'click' + EVENT_KEY + DATA_API_KEY;
   var CLASS_NAME_ALERT = 'alert';
   var CLASS_NAME_FADE = 'fade';
   var CLASS_NAME_SHOW = 'show';
@@ -293,7 +293,7 @@
       }
 
       if (!parent) {
-        parent = $__default['default'](element).closest("." + CLASS_NAME_ALERT)[0];
+        parent = $__default['default'](element).closest('.' + CLASS_NAME_ALERT)[0];
       }
 
       return parent;
@@ -354,7 +354,7 @@
     };
 
     _createClass(Alert, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION;
       }
@@ -393,7 +393,7 @@
   var NAME$1 = 'button';
   var VERSION$1 = '4.5.3';
   var DATA_KEY$1 = 'bs.button';
-  var EVENT_KEY$1 = "." + DATA_KEY$1;
+  var EVENT_KEY$1 = '.' + DATA_KEY$1;
   var DATA_API_KEY$1 = '.data-api';
   var JQUERY_NO_CONFLICT$1 = $__default['default'].fn[NAME$1];
   var CLASS_NAME_ACTIVE = 'active';
@@ -406,9 +406,9 @@
   var SELECTOR_INPUT = 'input:not([type="hidden"])';
   var SELECTOR_ACTIVE = '.active';
   var SELECTOR_BUTTON = '.btn';
-  var EVENT_CLICK_DATA_API$1 = "click" + EVENT_KEY$1 + DATA_API_KEY$1;
-  var EVENT_FOCUS_BLUR_DATA_API = "focus" + EVENT_KEY$1 + DATA_API_KEY$1 + " " + ("blur" + EVENT_KEY$1 + DATA_API_KEY$1);
-  var EVENT_LOAD_DATA_API = "load" + EVENT_KEY$1 + DATA_API_KEY$1;
+  var EVENT_CLICK_DATA_API$1 = 'click' + EVENT_KEY$1 + DATA_API_KEY$1;
+  var EVENT_FOCUS_BLUR_DATA_API = 'focus' + EVENT_KEY$1 + DATA_API_KEY$1 + ' ' + ('blur' + EVENT_KEY$1 + DATA_API_KEY$1);
+  var EVENT_LOAD_DATA_API = 'load' + EVENT_KEY$1 + DATA_API_KEY$1;
   /**
    * ------------------------------------------------------------------------
    * Class Definition
@@ -498,7 +498,7 @@
     };
 
     _createClass(Button, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$1;
       }
@@ -592,7 +592,7 @@
   var NAME$2 = 'carousel';
   var VERSION$2 = '4.5.3';
   var DATA_KEY$2 = 'bs.carousel';
-  var EVENT_KEY$2 = "." + DATA_KEY$2;
+  var EVENT_KEY$2 = '.' + DATA_KEY$2;
   var DATA_API_KEY$2 = '.data-api';
   var JQUERY_NO_CONFLICT$2 = $__default['default'].fn[NAME$2];
   var ARROW_LEFT_KEYCODE = 37; // KeyboardEvent.which value for left arrow key
@@ -622,19 +622,19 @@
   var DIRECTION_PREV = 'prev';
   var DIRECTION_LEFT = 'left';
   var DIRECTION_RIGHT = 'right';
-  var EVENT_SLIDE = "slide" + EVENT_KEY$2;
-  var EVENT_SLID = "slid" + EVENT_KEY$2;
-  var EVENT_KEYDOWN = "keydown" + EVENT_KEY$2;
-  var EVENT_MOUSEENTER = "mouseenter" + EVENT_KEY$2;
-  var EVENT_MOUSELEAVE = "mouseleave" + EVENT_KEY$2;
-  var EVENT_TOUCHSTART = "touchstart" + EVENT_KEY$2;
-  var EVENT_TOUCHMOVE = "touchmove" + EVENT_KEY$2;
-  var EVENT_TOUCHEND = "touchend" + EVENT_KEY$2;
-  var EVENT_POINTERDOWN = "pointerdown" + EVENT_KEY$2;
-  var EVENT_POINTERUP = "pointerup" + EVENT_KEY$2;
-  var EVENT_DRAG_START = "dragstart" + EVENT_KEY$2;
-  var EVENT_LOAD_DATA_API$1 = "load" + EVENT_KEY$2 + DATA_API_KEY$2;
-  var EVENT_CLICK_DATA_API$2 = "click" + EVENT_KEY$2 + DATA_API_KEY$2;
+  var EVENT_SLIDE = 'slide' + EVENT_KEY$2;
+  var EVENT_SLID = 'slid' + EVENT_KEY$2;
+  var EVENT_KEYDOWN = 'keydown' + EVENT_KEY$2;
+  var EVENT_MOUSEENTER = 'mouseenter' + EVENT_KEY$2;
+  var EVENT_MOUSELEAVE = 'mouseleave' + EVENT_KEY$2;
+  var EVENT_TOUCHSTART = 'touchstart' + EVENT_KEY$2;
+  var EVENT_TOUCHMOVE = 'touchmove' + EVENT_KEY$2;
+  var EVENT_TOUCHEND = 'touchend' + EVENT_KEY$2;
+  var EVENT_POINTERDOWN = 'pointerdown' + EVENT_KEY$2;
+  var EVENT_POINTERUP = 'pointerup' + EVENT_KEY$2;
+  var EVENT_DRAG_START = 'dragstart' + EVENT_KEY$2;
+  var EVENT_LOAD_DATA_API$1 = 'load' + EVENT_KEY$2 + DATA_API_KEY$2;
+  var EVENT_CLICK_DATA_API$2 = 'click' + EVENT_KEY$2 + DATA_API_KEY$2;
   var CLASS_NAME_CAROUSEL = 'carousel';
   var CLASS_NAME_ACTIVE$1 = 'active';
   var CLASS_NAME_SLIDE = 'slide';
@@ -1044,8 +1044,8 @@
 
         var transitionDuration = Util.getTransitionDurationFromElement(activeElement);
         $__default['default'](activeElement).one(Util.TRANSITION_END, function () {
-          $__default['default'](nextElement).removeClass(directionalClassName + " " + orderClassName).addClass(CLASS_NAME_ACTIVE$1);
-          $__default['default'](activeElement).removeClass(CLASS_NAME_ACTIVE$1 + " " + orderClassName + " " + directionalClassName);
+          $__default['default'](nextElement).removeClass(directionalClassName + ' ' + orderClassName).addClass(CLASS_NAME_ACTIVE$1);
+          $__default['default'](activeElement).removeClass(CLASS_NAME_ACTIVE$1 + ' ' + orderClassName + ' ' + directionalClassName);
           _this4._isSliding = false;
           setTimeout(function () {
             return $__default['default'](_this4._element).trigger(slidEvent);
@@ -1085,7 +1085,7 @@
           data.to(config);
         } else if (typeof action === 'string') {
           if (typeof data[action] === 'undefined') {
-            throw new TypeError("No method named \"" + action + "\"");
+            throw new TypeError('No method named "' + action + '"');
           }
 
           data[action]();
@@ -1127,12 +1127,12 @@
     };
 
     _createClass(Carousel, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$2;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default;
       }
@@ -1180,7 +1180,7 @@
   var NAME$3 = 'collapse';
   var VERSION$3 = '4.5.3';
   var DATA_KEY$3 = 'bs.collapse';
-  var EVENT_KEY$3 = "." + DATA_KEY$3;
+  var EVENT_KEY$3 = '.' + DATA_KEY$3;
   var DATA_API_KEY$3 = '.data-api';
   var JQUERY_NO_CONFLICT$3 = $__default['default'].fn[NAME$3];
   var Default$1 = {
@@ -1191,11 +1191,11 @@
     toggle: 'boolean',
     parent: '(string|element)'
   };
-  var EVENT_SHOW = "show" + EVENT_KEY$3;
-  var EVENT_SHOWN = "shown" + EVENT_KEY$3;
-  var EVENT_HIDE = "hide" + EVENT_KEY$3;
-  var EVENT_HIDDEN = "hidden" + EVENT_KEY$3;
-  var EVENT_CLICK_DATA_API$3 = "click" + EVENT_KEY$3 + DATA_API_KEY$3;
+  var EVENT_SHOW = 'show' + EVENT_KEY$3;
+  var EVENT_SHOWN = 'shown' + EVENT_KEY$3;
+  var EVENT_HIDE = 'hide' + EVENT_KEY$3;
+  var EVENT_HIDDEN = 'hidden' + EVENT_KEY$3;
+  var EVENT_CLICK_DATA_API$3 = 'click' + EVENT_KEY$3 + DATA_API_KEY$3;
   var CLASS_NAME_SHOW$1 = 'show';
   var CLASS_NAME_COLLAPSE = 'collapse';
   var CLASS_NAME_COLLAPSING = 'collapsing';
@@ -1215,7 +1215,7 @@
       this._isTransitioning = false;
       this._element = element;
       this._config = this._getConfig(config);
-      this._triggerArray = [].slice.call(document.querySelectorAll("[data-toggle=\"collapse\"][href=\"#" + element.id + "\"]," + ("[data-toggle=\"collapse\"][data-target=\"#" + element.id + "\"]")));
+      this._triggerArray = [].slice.call(document.querySelectorAll('[data-toggle="collapse"][href="#' + element.id + '"],' + ('[data-toggle="collapse"][data-target="#' + element.id + '"]')));
       var toggleList = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE$1));
 
       for (var i = 0, len = toggleList.length; i < len; i++) {
@@ -1314,7 +1314,7 @@
       this.setTransitioning(true);
 
       var complete = function complete() {
-        $__default['default'](_this._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$1);
+        $__default['default'](_this._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE + ' ' + CLASS_NAME_SHOW$1);
         _this._element.style[dimension] = '';
 
         _this.setTransitioning(false);
@@ -1323,10 +1323,10 @@
       };
 
       var capitalizedDimension = dimension[0].toUpperCase() + dimension.slice(1);
-      var scrollSize = "scroll" + capitalizedDimension;
+      var scrollSize = 'scroll' + capitalizedDimension;
       var transitionDuration = Util.getTransitionDurationFromElement(this._element);
       $__default['default'](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
-      this._element.style[dimension] = this._element[scrollSize] + "px";
+      this._element.style[dimension] = this._element[scrollSize] + 'px';
     };
 
     _proto.hide = function hide() {
@@ -1345,9 +1345,9 @@
 
       var dimension = this._getDimension();
 
-      this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + "px";
+      this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + 'px';
       Util.reflow(this._element);
-      $__default['default'](this._element).addClass(CLASS_NAME_COLLAPSING).removeClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$1);
+      $__default['default'](this._element).addClass(CLASS_NAME_COLLAPSING).removeClass(CLASS_NAME_COLLAPSE + ' ' + CLASS_NAME_SHOW$1);
       var triggerArrayLength = this._triggerArray.length;
 
       if (triggerArrayLength > 0) {
@@ -1420,7 +1420,7 @@
         parent = document.querySelector(this._config.parent);
       }
 
-      var selector = "[data-toggle=\"collapse\"][data-parent=\"" + this._config.parent + "\"]";
+      var selector = '[data-toggle="collapse"][data-parent="' + this._config.parent + '"]';
       var children = [].slice.call(parent.querySelectorAll(selector));
       $__default['default'](children).each(function (i, element) {
         _this3._addAriaAndCollapsedClass(Collapse._getTargetFromElement(element), [element]);
@@ -1460,7 +1460,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config]();
@@ -1469,12 +1469,12 @@
     };
 
     _createClass(Collapse, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$3;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$1;
       }
@@ -1529,7 +1529,7 @@
   var NAME$4 = 'dropdown';
   var VERSION$4 = '4.5.3';
   var DATA_KEY$4 = 'bs.dropdown';
-  var EVENT_KEY$4 = "." + DATA_KEY$4;
+  var EVENT_KEY$4 = '.' + DATA_KEY$4;
   var DATA_API_KEY$4 = '.data-api';
   var JQUERY_NO_CONFLICT$4 = $__default['default'].fn[NAME$4];
   var ESCAPE_KEYCODE = 27; // KeyboardEvent.which value for Escape (Esc) key
@@ -1544,15 +1544,15 @@
 
   var RIGHT_MOUSE_BUTTON_WHICH = 3; // MouseEvent.which value for the right button (assuming a right-handed mouse)
 
-  var REGEXP_KEYDOWN = new RegExp(ARROW_UP_KEYCODE + "|" + ARROW_DOWN_KEYCODE + "|" + ESCAPE_KEYCODE);
-  var EVENT_HIDE$1 = "hide" + EVENT_KEY$4;
-  var EVENT_HIDDEN$1 = "hidden" + EVENT_KEY$4;
-  var EVENT_SHOW$1 = "show" + EVENT_KEY$4;
-  var EVENT_SHOWN$1 = "shown" + EVENT_KEY$4;
-  var EVENT_CLICK = "click" + EVENT_KEY$4;
-  var EVENT_CLICK_DATA_API$4 = "click" + EVENT_KEY$4 + DATA_API_KEY$4;
-  var EVENT_KEYDOWN_DATA_API = "keydown" + EVENT_KEY$4 + DATA_API_KEY$4;
-  var EVENT_KEYUP_DATA_API = "keyup" + EVENT_KEY$4 + DATA_API_KEY$4;
+  var REGEXP_KEYDOWN = new RegExp(ARROW_UP_KEYCODE + '|' + ARROW_DOWN_KEYCODE + '|' + ESCAPE_KEYCODE);
+  var EVENT_HIDE$1 = 'hide' + EVENT_KEY$4;
+  var EVENT_HIDDEN$1 = 'hidden' + EVENT_KEY$4;
+  var EVENT_SHOW$1 = 'show' + EVENT_KEY$4;
+  var EVENT_SHOWN$1 = 'shown' + EVENT_KEY$4;
+  var EVENT_CLICK = 'click' + EVENT_KEY$4;
+  var EVENT_CLICK_DATA_API$4 = 'click' + EVENT_KEY$4 + DATA_API_KEY$4;
+  var EVENT_KEYDOWN_DATA_API = 'keydown' + EVENT_KEY$4 + DATA_API_KEY$4;
+  var EVENT_KEYUP_DATA_API = 'keyup' + EVENT_KEY$4 + DATA_API_KEY$4;
   var CLASS_NAME_DISABLED = 'disabled';
   var CLASS_NAME_SHOW$2 = 'show';
   var CLASS_NAME_DROPUP = 'dropup';
@@ -1846,7 +1846,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config]();
@@ -1920,7 +1920,7 @@
       }
 
       return parent || element.parentNode;
-    } // eslint-disable-next-line complexity
+    }  
     ;
 
     Dropdown._dataApiKeydownHandler = function _dataApiKeydownHandler(event) {
@@ -1987,17 +1987,17 @@
     };
 
     _createClass(Dropdown, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$4;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$2;
       }
     }, {
-      key: "DefaultType",
+      key: 'DefaultType',
       get: function get() {
         return DefaultType$2;
       }
@@ -2012,7 +2012,7 @@
    */
 
 
-  $__default['default'](document).on(EVENT_KEYDOWN_DATA_API, SELECTOR_DATA_TOGGLE$2, Dropdown._dataApiKeydownHandler).on(EVENT_KEYDOWN_DATA_API, SELECTOR_MENU, Dropdown._dataApiKeydownHandler).on(EVENT_CLICK_DATA_API$4 + " " + EVENT_KEYUP_DATA_API, Dropdown._clearMenus).on(EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$2, function (event) {
+  $__default['default'](document).on(EVENT_KEYDOWN_DATA_API, SELECTOR_DATA_TOGGLE$2, Dropdown._dataApiKeydownHandler).on(EVENT_KEYDOWN_DATA_API, SELECTOR_MENU, Dropdown._dataApiKeydownHandler).on(EVENT_CLICK_DATA_API$4 + ' ' + EVENT_KEYUP_DATA_API, Dropdown._clearMenus).on(EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$2, function (event) {
     event.preventDefault();
     event.stopPropagation();
 
@@ -2043,7 +2043,7 @@
   var NAME$5 = 'modal';
   var VERSION$5 = '4.5.3';
   var DATA_KEY$5 = 'bs.modal';
-  var EVENT_KEY$5 = "." + DATA_KEY$5;
+  var EVENT_KEY$5 = '.' + DATA_KEY$5;
   var DATA_API_KEY$5 = '.data-api';
   var JQUERY_NO_CONFLICT$5 = $__default['default'].fn[NAME$5];
   var ESCAPE_KEYCODE$1 = 27; // KeyboardEvent.which value for Escape (Esc) key
@@ -2060,18 +2060,18 @@
     focus: 'boolean',
     show: 'boolean'
   };
-  var EVENT_HIDE$2 = "hide" + EVENT_KEY$5;
-  var EVENT_HIDE_PREVENTED = "hidePrevented" + EVENT_KEY$5;
-  var EVENT_HIDDEN$2 = "hidden" + EVENT_KEY$5;
-  var EVENT_SHOW$2 = "show" + EVENT_KEY$5;
-  var EVENT_SHOWN$2 = "shown" + EVENT_KEY$5;
-  var EVENT_FOCUSIN = "focusin" + EVENT_KEY$5;
-  var EVENT_RESIZE = "resize" + EVENT_KEY$5;
-  var EVENT_CLICK_DISMISS = "click.dismiss" + EVENT_KEY$5;
-  var EVENT_KEYDOWN_DISMISS = "keydown.dismiss" + EVENT_KEY$5;
-  var EVENT_MOUSEUP_DISMISS = "mouseup.dismiss" + EVENT_KEY$5;
-  var EVENT_MOUSEDOWN_DISMISS = "mousedown.dismiss" + EVENT_KEY$5;
-  var EVENT_CLICK_DATA_API$5 = "click" + EVENT_KEY$5 + DATA_API_KEY$5;
+  var EVENT_HIDE$2 = 'hide' + EVENT_KEY$5;
+  var EVENT_HIDE_PREVENTED = 'hidePrevented' + EVENT_KEY$5;
+  var EVENT_HIDDEN$2 = 'hidden' + EVENT_KEY$5;
+  var EVENT_SHOW$2 = 'show' + EVENT_KEY$5;
+  var EVENT_SHOWN$2 = 'shown' + EVENT_KEY$5;
+  var EVENT_FOCUSIN = 'focusin' + EVENT_KEY$5;
+  var EVENT_RESIZE = 'resize' + EVENT_KEY$5;
+  var EVENT_CLICK_DISMISS = 'click.dismiss' + EVENT_KEY$5;
+  var EVENT_KEYDOWN_DISMISS = 'keydown.dismiss' + EVENT_KEY$5;
+  var EVENT_MOUSEUP_DISMISS = 'mouseup.dismiss' + EVENT_KEY$5;
+  var EVENT_MOUSEDOWN_DISMISS = 'mousedown.dismiss' + EVENT_KEY$5;
+  var EVENT_CLICK_DATA_API$5 = 'click' + EVENT_KEY$5 + DATA_API_KEY$5;
   var CLASS_NAME_SCROLLABLE = 'modal-dialog-scrollable';
   var CLASS_NAME_SCROLLBAR_MEASURER = 'modal-scrollbar-measure';
   var CLASS_NAME_BACKDROP = 'modal-backdrop';
@@ -2478,11 +2478,11 @@
       var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
 
       if (!this._isBodyOverflowing && isModalOverflowing) {
-        this._element.style.paddingLeft = this._scrollbarWidth + "px";
+        this._element.style.paddingLeft = this._scrollbarWidth + 'px';
       }
 
       if (this._isBodyOverflowing && !isModalOverflowing) {
-        this._element.style.paddingRight = this._scrollbarWidth + "px";
+        this._element.style.paddingRight = this._scrollbarWidth + 'px';
       }
     };
 
@@ -2509,18 +2509,18 @@
         $__default['default'](fixedContent).each(function (index, element) {
           var actualPadding = element.style.paddingRight;
           var calculatedPadding = $__default['default'](element).css('padding-right');
-          $__default['default'](element).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + _this10._scrollbarWidth + "px");
+          $__default['default'](element).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + _this10._scrollbarWidth + 'px');
         }); // Adjust sticky content margin
 
         $__default['default'](stickyContent).each(function (index, element) {
           var actualMargin = element.style.marginRight;
           var calculatedMargin = $__default['default'](element).css('margin-right');
-          $__default['default'](element).data('margin-right', actualMargin).css('margin-right', parseFloat(calculatedMargin) - _this10._scrollbarWidth + "px");
+          $__default['default'](element).data('margin-right', actualMargin).css('margin-right', parseFloat(calculatedMargin) - _this10._scrollbarWidth + 'px');
         }); // Adjust body padding
 
         var actualPadding = document.body.style.paddingRight;
         var calculatedPadding = $__default['default'](document.body).css('padding-right');
-        $__default['default'](document.body).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + this._scrollbarWidth + "px");
+        $__default['default'](document.body).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + this._scrollbarWidth + 'px');
       }
 
       $__default['default'](document.body).addClass(CLASS_NAME_OPEN);
@@ -2535,7 +2535,7 @@
         element.style.paddingRight = padding ? padding : '';
       }); // Restore sticky content
 
-      var elements = [].slice.call(document.querySelectorAll("" + SELECTOR_STICKY_CONTENT));
+      var elements = [].slice.call(document.querySelectorAll('' + SELECTOR_STICKY_CONTENT));
       $__default['default'](elements).each(function (index, element) {
         var margin = $__default['default'](element).data('margin-right');
 
@@ -2573,7 +2573,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config](relatedTarget);
@@ -2584,12 +2584,12 @@
     };
 
     _createClass(Modal, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$5;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$3;
       }
@@ -2749,7 +2749,7 @@
 
       if (whitelistKeys.indexOf(el.nodeName.toLowerCase()) === -1) {
         el.parentNode.removeChild(el);
-        return "continue";
+        return 'continue';
       }
 
       var attributeList = [].slice.call(el.attributes);
@@ -2764,7 +2764,7 @@
     for (var i = 0, len = elements.length; i < len; i++) {
       var _ret = _loop(i);
 
-      if (_ret === "continue") continue;
+      if (_ret === 'continue') continue;
     }
 
     return createdDocument.body.innerHTML;
@@ -2779,10 +2779,10 @@
   var NAME$6 = 'tooltip';
   var VERSION$6 = '4.5.3';
   var DATA_KEY$6 = 'bs.tooltip';
-  var EVENT_KEY$6 = "." + DATA_KEY$6;
+  var EVENT_KEY$6 = '.' + DATA_KEY$6;
   var JQUERY_NO_CONFLICT$6 = $__default['default'].fn[NAME$6];
   var CLASS_PREFIX = 'bs-tooltip';
-  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
+  var BSCLS_PREFIX_REGEX = new RegExp('(^|\\s)' + CLASS_PREFIX + '\\S+', 'g');
   var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn'];
   var DefaultType$4 = {
     animation: 'boolean',
@@ -2830,16 +2830,16 @@
   var HOVER_STATE_SHOW = 'show';
   var HOVER_STATE_OUT = 'out';
   var Event = {
-    HIDE: "hide" + EVENT_KEY$6,
-    HIDDEN: "hidden" + EVENT_KEY$6,
-    SHOW: "show" + EVENT_KEY$6,
-    SHOWN: "shown" + EVENT_KEY$6,
-    INSERTED: "inserted" + EVENT_KEY$6,
-    CLICK: "click" + EVENT_KEY$6,
-    FOCUSIN: "focusin" + EVENT_KEY$6,
-    FOCUSOUT: "focusout" + EVENT_KEY$6,
-    MOUSEENTER: "mouseenter" + EVENT_KEY$6,
-    MOUSELEAVE: "mouseleave" + EVENT_KEY$6
+    HIDE: 'hide' + EVENT_KEY$6,
+    HIDDEN: 'hidden' + EVENT_KEY$6,
+    SHOW: 'show' + EVENT_KEY$6,
+    SHOWN: 'shown' + EVENT_KEY$6,
+    INSERTED: 'inserted' + EVENT_KEY$6,
+    CLICK: 'click' + EVENT_KEY$6,
+    FOCUSIN: 'focusin' + EVENT_KEY$6,
+    FOCUSOUT: 'focusout' + EVENT_KEY$6,
+    MOUSEENTER: 'mouseenter' + EVENT_KEY$6,
+    MOUSELEAVE: 'mouseleave' + EVENT_KEY$6
   };
   var CLASS_NAME_FADE$2 = 'fade';
   var CLASS_NAME_SHOW$4 = 'show';
@@ -3089,7 +3089,7 @@
     };
 
     _proto.addAttachmentClass = function addAttachmentClass(attachment) {
-      $__default['default'](this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
+      $__default['default'](this.getTipElement()).addClass(CLASS_PREFIX + '-' + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
@@ -3100,7 +3100,7 @@
     _proto.setContent = function setContent() {
       var tip = this.getTipElement();
       this.setElementContent($__default['default'](tip.querySelectorAll(SELECTOR_TOOLTIP_INNER)), this.getTitle());
-      $__default['default'](tip).removeClass(CLASS_NAME_FADE$2 + " " + CLASS_NAME_SHOW$4);
+      $__default['default'](tip).removeClass(CLASS_NAME_FADE$2 + ' ' + CLASS_NAME_SHOW$4);
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
@@ -3421,7 +3421,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config]();
@@ -3430,37 +3430,37 @@
     };
 
     _createClass(Tooltip, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$6;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$4;
       }
     }, {
-      key: "NAME",
+      key: 'NAME',
       get: function get() {
         return NAME$6;
       }
     }, {
-      key: "DATA_KEY",
+      key: 'DATA_KEY',
       get: function get() {
         return DATA_KEY$6;
       }
     }, {
-      key: "Event",
+      key: 'Event',
       get: function get() {
         return Event;
       }
     }, {
-      key: "EVENT_KEY",
+      key: 'EVENT_KEY',
       get: function get() {
         return EVENT_KEY$6;
       }
     }, {
-      key: "DefaultType",
+      key: 'DefaultType',
       get: function get() {
         return DefaultType$4;
       }
@@ -3492,10 +3492,10 @@
   var NAME$7 = 'popover';
   var VERSION$7 = '4.5.3';
   var DATA_KEY$7 = 'bs.popover';
-  var EVENT_KEY$7 = "." + DATA_KEY$7;
+  var EVENT_KEY$7 = '.' + DATA_KEY$7;
   var JQUERY_NO_CONFLICT$7 = $__default['default'].fn[NAME$7];
   var CLASS_PREFIX$1 = 'bs-popover';
-  var BSCLS_PREFIX_REGEX$1 = new RegExp("(^|\\s)" + CLASS_PREFIX$1 + "\\S+", 'g');
+  var BSCLS_PREFIX_REGEX$1 = new RegExp('(^|\\s)' + CLASS_PREFIX$1 + '\\S+', 'g');
 
   var Default$5 = _extends({}, Tooltip.Default, {
     placement: 'right',
@@ -3513,16 +3513,16 @@
   var SELECTOR_TITLE = '.popover-header';
   var SELECTOR_CONTENT = '.popover-body';
   var Event$1 = {
-    HIDE: "hide" + EVENT_KEY$7,
-    HIDDEN: "hidden" + EVENT_KEY$7,
-    SHOW: "show" + EVENT_KEY$7,
-    SHOWN: "shown" + EVENT_KEY$7,
-    INSERTED: "inserted" + EVENT_KEY$7,
-    CLICK: "click" + EVENT_KEY$7,
-    FOCUSIN: "focusin" + EVENT_KEY$7,
-    FOCUSOUT: "focusout" + EVENT_KEY$7,
-    MOUSEENTER: "mouseenter" + EVENT_KEY$7,
-    MOUSELEAVE: "mouseleave" + EVENT_KEY$7
+    HIDE: 'hide' + EVENT_KEY$7,
+    HIDDEN: 'hidden' + EVENT_KEY$7,
+    SHOW: 'show' + EVENT_KEY$7,
+    SHOWN: 'shown' + EVENT_KEY$7,
+    INSERTED: 'inserted' + EVENT_KEY$7,
+    CLICK: 'click' + EVENT_KEY$7,
+    FOCUSIN: 'focusin' + EVENT_KEY$7,
+    FOCUSOUT: 'focusout' + EVENT_KEY$7,
+    MOUSEENTER: 'mouseenter' + EVENT_KEY$7,
+    MOUSELEAVE: 'mouseleave' + EVENT_KEY$7
   };
   /**
    * ------------------------------------------------------------------------
@@ -3545,7 +3545,7 @@
     };
 
     _proto.addAttachmentClass = function addAttachmentClass(attachment) {
-      $__default['default'](this.getTipElement()).addClass(CLASS_PREFIX$1 + "-" + attachment);
+      $__default['default'](this.getTipElement()).addClass(CLASS_PREFIX$1 + '-' + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
@@ -3565,7 +3565,7 @@
       }
 
       this.setElementContent($tip.find(SELECTOR_CONTENT), content);
-      $tip.removeClass(CLASS_NAME_FADE$3 + " " + CLASS_NAME_SHOW$5);
+      $tip.removeClass(CLASS_NAME_FADE$3 + ' ' + CLASS_NAME_SHOW$5);
     } // Private
     ;
 
@@ -3600,7 +3600,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config]();
@@ -3609,38 +3609,38 @@
     };
 
     _createClass(Popover, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       // Getters
       get: function get() {
         return VERSION$7;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$5;
       }
     }, {
-      key: "NAME",
+      key: 'NAME',
       get: function get() {
         return NAME$7;
       }
     }, {
-      key: "DATA_KEY",
+      key: 'DATA_KEY',
       get: function get() {
         return DATA_KEY$7;
       }
     }, {
-      key: "Event",
+      key: 'Event',
       get: function get() {
         return Event$1;
       }
     }, {
-      key: "EVENT_KEY",
+      key: 'EVENT_KEY',
       get: function get() {
         return EVENT_KEY$7;
       }
     }, {
-      key: "DefaultType",
+      key: 'DefaultType',
       get: function get() {
         return DefaultType$5;
       }
@@ -3672,7 +3672,7 @@
   var NAME$8 = 'scrollspy';
   var VERSION$8 = '4.5.3';
   var DATA_KEY$8 = 'bs.scrollspy';
-  var EVENT_KEY$8 = "." + DATA_KEY$8;
+  var EVENT_KEY$8 = '.' + DATA_KEY$8;
   var DATA_API_KEY$6 = '.data-api';
   var JQUERY_NO_CONFLICT$8 = $__default['default'].fn[NAME$8];
   var Default$6 = {
@@ -3685,9 +3685,9 @@
     method: 'string',
     target: '(string|element)'
   };
-  var EVENT_ACTIVATE = "activate" + EVENT_KEY$8;
-  var EVENT_SCROLL = "scroll" + EVENT_KEY$8;
-  var EVENT_LOAD_DATA_API$2 = "load" + EVENT_KEY$8 + DATA_API_KEY$6;
+  var EVENT_ACTIVATE = 'activate' + EVENT_KEY$8;
+  var EVENT_SCROLL = 'scroll' + EVENT_KEY$8;
+  var EVENT_LOAD_DATA_API$2 = 'load' + EVENT_KEY$8 + DATA_API_KEY$6;
   var CLASS_NAME_DROPDOWN_ITEM = 'dropdown-item';
   var CLASS_NAME_ACTIVE$2 = 'active';
   var SELECTOR_DATA_SPY = '[data-spy="scroll"]';
@@ -3713,7 +3713,7 @@
       this._element = element;
       this._scrollElement = element.tagName === 'BODY' ? window : element;
       this._config = this._getConfig(config);
-      this._selector = this._config.target + " " + SELECTOR_NAV_LINKS + "," + (this._config.target + " " + SELECTOR_LIST_ITEMS + ",") + (this._config.target + " " + SELECTOR_DROPDOWN_ITEMS);
+      this._selector = this._config.target + ' ' + SELECTOR_NAV_LINKS + ',' + (this._config.target + ' ' + SELECTOR_LIST_ITEMS + ',') + (this._config.target + ' ' + SELECTOR_DROPDOWN_ITEMS);
       this._offsets = [];
       this._targets = [];
       this._activeTarget = null;
@@ -3794,7 +3794,7 @@
           $__default['default'](config.target).attr('id', id);
         }
 
-        config.target = "#" + id;
+        config.target = '#' + id;
       }
 
       Util.typeCheckConfig(NAME$8, config, DefaultType$6);
@@ -3857,7 +3857,7 @@
       this._clear();
 
       var queries = this._selector.split(',').map(function (selector) {
-        return selector + "[data-target=\"" + target + "\"]," + selector + "[href=\"" + target + "\"]";
+        return selector + '[data-target="' + target + '"],' + selector + '[href="' + target + '"]';
       });
 
       var $link = $__default['default']([].slice.call(document.querySelectorAll(queries.join(','))));
@@ -3870,7 +3870,7 @@
         $link.addClass(CLASS_NAME_ACTIVE$2); // Set triggered links parents as active
         // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
 
-        $link.parents(SELECTOR_NAV_LIST_GROUP).prev(SELECTOR_NAV_LINKS + ", " + SELECTOR_LIST_ITEMS).addClass(CLASS_NAME_ACTIVE$2); // Handle special case when .nav-link is inside .nav-item
+        $link.parents(SELECTOR_NAV_LIST_GROUP).prev(SELECTOR_NAV_LINKS + ', ' + SELECTOR_LIST_ITEMS).addClass(CLASS_NAME_ACTIVE$2); // Handle special case when .nav-link is inside .nav-item
 
         $link.parents(SELECTOR_NAV_LIST_GROUP).prev(SELECTOR_NAV_ITEMS).children(SELECTOR_NAV_LINKS).addClass(CLASS_NAME_ACTIVE$2);
       }
@@ -3902,7 +3902,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config]();
@@ -3911,12 +3911,12 @@
     };
 
     _createClass(ScrollSpy, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$8;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$6;
       }
@@ -3964,14 +3964,14 @@
   var NAME$9 = 'tab';
   var VERSION$9 = '4.5.3';
   var DATA_KEY$9 = 'bs.tab';
-  var EVENT_KEY$9 = "." + DATA_KEY$9;
+  var EVENT_KEY$9 = '.' + DATA_KEY$9;
   var DATA_API_KEY$7 = '.data-api';
   var JQUERY_NO_CONFLICT$9 = $__default['default'].fn[NAME$9];
-  var EVENT_HIDE$3 = "hide" + EVENT_KEY$9;
-  var EVENT_HIDDEN$3 = "hidden" + EVENT_KEY$9;
-  var EVENT_SHOW$3 = "show" + EVENT_KEY$9;
-  var EVENT_SHOWN$3 = "shown" + EVENT_KEY$9;
-  var EVENT_CLICK_DATA_API$6 = "click" + EVENT_KEY$9 + DATA_API_KEY$7;
+  var EVENT_HIDE$3 = 'hide' + EVENT_KEY$9;
+  var EVENT_HIDDEN$3 = 'hidden' + EVENT_KEY$9;
+  var EVENT_SHOW$3 = 'show' + EVENT_KEY$9;
+  var EVENT_SHOWN$3 = 'shown' + EVENT_KEY$9;
+  var EVENT_CLICK_DATA_API$6 = 'click' + EVENT_KEY$9 + DATA_API_KEY$7;
   var CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu';
   var CLASS_NAME_ACTIVE$3 = 'active';
   var CLASS_NAME_DISABLED$1 = 'disabled';
@@ -4138,7 +4138,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config]();
@@ -4147,7 +4147,7 @@
     };
 
     _createClass(Tab, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$9;
       }
@@ -4190,13 +4190,13 @@
   var NAME$a = 'toast';
   var VERSION$a = '4.5.3';
   var DATA_KEY$a = 'bs.toast';
-  var EVENT_KEY$a = "." + DATA_KEY$a;
+  var EVENT_KEY$a = '.' + DATA_KEY$a;
   var JQUERY_NO_CONFLICT$a = $__default['default'].fn[NAME$a];
-  var EVENT_CLICK_DISMISS$1 = "click.dismiss" + EVENT_KEY$a;
-  var EVENT_HIDE$4 = "hide" + EVENT_KEY$a;
-  var EVENT_HIDDEN$4 = "hidden" + EVENT_KEY$a;
-  var EVENT_SHOW$4 = "show" + EVENT_KEY$a;
-  var EVENT_SHOWN$4 = "shown" + EVENT_KEY$a;
+  var EVENT_CLICK_DISMISS$1 = 'click.dismiss' + EVENT_KEY$a;
+  var EVENT_HIDE$4 = 'hide' + EVENT_KEY$a;
+  var EVENT_HIDDEN$4 = 'hidden' + EVENT_KEY$a;
+  var EVENT_SHOW$4 = 'show' + EVENT_KEY$a;
+  var EVENT_SHOWN$4 = 'shown' + EVENT_KEY$a;
   var CLASS_NAME_FADE$5 = 'fade';
   var CLASS_NAME_HIDE = 'hide';
   var CLASS_NAME_SHOW$7 = 'show';
@@ -4357,7 +4357,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError("No method named \"" + config + "\"");
+            throw new TypeError('No method named "' + config + '"');
           }
 
           data[config](this);
@@ -4366,17 +4366,17 @@
     };
 
     _createClass(Toast, null, [{
-      key: "VERSION",
+      key: 'VERSION',
       get: function get() {
         return VERSION$a;
       }
     }, {
-      key: "DefaultType",
+      key: 'DefaultType',
       get: function get() {
         return DefaultType$7;
       }
     }, {
-      key: "Default",
+      key: 'Default',
       get: function get() {
         return Default$7;
       }

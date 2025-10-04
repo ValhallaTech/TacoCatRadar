@@ -9,8 +9,8 @@ import '../styles/custom.css';
 
 //Function that reverses the input string
 function fncReverse02() {
-    let reversedStr = "";
-    let inputStr = document.getElementById("inputBox").value;
+    let reversedStr = '';
+    let inputStr = document.getElementById('inputBox').value;
     let inputStrLngth = inputStr.length;
     for (let i = inputStrLngth - 1; i >= 0; i--) {
         reversedStr += inputStr[i];
@@ -23,18 +23,18 @@ async function checkPalindrome(event) {
     // Prevent form submission
     event.preventDefault();
     
-    let inputStr = document.getElementById("inputBox").value;
-    let inputBox = document.getElementById("inputBox");
-    let outputBox = document.getElementById("outputBox");
-    let button = document.getElementById("btnFlip");
+    let inputStr = document.getElementById('inputBox').value;
+    let inputBox = document.getElementById('inputBox');
+    let outputBox = document.getElementById('outputBox');
+    let button = document.getElementById('btnFlip');
     
     // Validation: Check for empty or whitespace-only input
     if (!inputStr || inputStr.trim() === '') {
         inputBox.classList.add('input-error');
         Swal.fire({
-            title: "Empty Input!",
-            text: "Please enter some text to check for palindromes.",
-            icon: "warning",
+            title: 'Empty Input!',
+            text: 'Please enter some text to check for palindromes.',
+            icon: 'warning',
         });
         return;
     }
@@ -75,8 +75,8 @@ async function checkPalindrome(event) {
         });
         
         Swal.fire({
-            title: "You Haz Palindrome!",
-            icon: "success",
+            title: 'You Haz Palindrome!',
+            icon: 'success',
         });
     }
     else {
@@ -85,29 +85,29 @@ async function checkPalindrome(event) {
         outputBox.classList.remove('input-success');
         
         Swal.fire({
-            title: "Nope. Palindrome Failz...",
-            icon: "error",
+            title: 'Nope. Palindrome Failz...',
+            icon: 'error',
         });
     }
 }
 
 // Module scripts load after DOM is ready, so we can attach directly
 // Wire up the button click event
-document.getElementById("btnFlip").addEventListener("click", checkPalindrome);
+document.getElementById('btnFlip').addEventListener('click', checkPalindrome);
 
 // Wire up the form submit event (Enter key)
-document.querySelector("#tacoContainer01 form").addEventListener("submit", checkPalindrome);
+document.querySelector('#tacoContainer01 form').addEventListener('submit', checkPalindrome);
 
 // Also add keypress listener to input box as backup
-document.getElementById("inputBox").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
+document.getElementById('inputBox').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
         event.preventDefault();
         checkPalindrome(event);
     }
 });
 
 // Clear validation states when user starts typing
-document.getElementById("inputBox").addEventListener("input", function() {
+document.getElementById('inputBox').addEventListener('input', function() {
     this.classList.remove('input-error', 'input-success');
-    document.getElementById("outputBox").classList.remove('input-error', 'input-success');
+    document.getElementById('outputBox').classList.remove('input-error', 'input-success');
 });

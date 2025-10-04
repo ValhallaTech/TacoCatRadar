@@ -69,7 +69,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.37.0":
+"@eslint/js@npm:9.37.0, @eslint/js@npm:^9.17.0":
   version: 9.37.0
   resolution: "@eslint/js@npm:9.37.0"
   checksum: 10c0/84f98a6213522fc76ea104bd910f606136200bd918544e056a7a22442d3f9d5c3c5cd7f4cdf2499d49b1fa140155b87d597a1f16d01644920f05c228e9ca0378
@@ -1424,11 +1424,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "TacoCatRadar@workspace:."
   dependencies:
+    "@eslint/js": "npm:^9.17.0"
     "@fortawesome/fontawesome-free": "npm:^6.7.2"
     "@popperjs/core": "npm:^2.11.8"
     bootstrap: "npm:^5.3.3"
     canvas-confetti: "npm:^1.9.3"
     eslint: "npm:^9.17.0"
+    globals: "npm:^15.14.0"
     parcel: "npm:^2.16.0"
     prismjs: "npm:^1.29.0"
     rimraf: "npm:^6.0.1"
@@ -2105,6 +2107,13 @@ __metadata:
   version: 14.0.0
   resolution: "globals@npm:14.0.0"
   checksum: 10c0/b96ff42620c9231ad468d4c58ff42afee7777ee1c963013ff8aabe095a451d0ceeb8dcd8ef4cbd64d2538cef45f787a78ba3a9574f4a634438963e334471302d
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.14.0":
+  version: 15.15.0
+  resolution: "globals@npm:15.15.0"
+  checksum: 10c0/f9ae80996392ca71316495a39bec88ac43ae3525a438b5626cd9d5ce9d5500d0a98a266409605f8cd7241c7acf57c354a48111ea02a767ba4f374b806d6861fe
   languageName: node
   linkType: hard
 

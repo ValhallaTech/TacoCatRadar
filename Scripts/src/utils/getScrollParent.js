@@ -11,15 +11,15 @@ import getParentNode from './getParentNode';
 export default function getScrollParent(element) {
   // Return body, `getScroll` will take care to get the correct `scrollTop` from it
   if (!element) {
-    return document.body
+    return document.body;
   }
 
   switch (element.nodeName) {
     case 'HTML':
     case 'BODY':
-      return element.ownerDocument.body
+      return element.ownerDocument.body;
     case '#document':
-      return element.body
+      return element.body;
   }
 
   // Firefox want us to check `-x` and `-y` variations as well

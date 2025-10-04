@@ -52,12 +52,12 @@ class DarkModeToggle {
         const icon = button.querySelector('.theme-icon');
         
         if (theme === 'dark') {
-            // Light mode icon (sun)
+            // Light mode icon (sun) - shows when in dark mode to indicate switching to light
             icon.innerHTML = '<i class="fa-solid fa-sun"></i>';
             button.setAttribute('aria-label', 'Switch to light mode');
             button.setAttribute('title', 'Switch to light mode');
         } else {
-            // Dark mode icon (moon)
+            // Dark mode icon (moon) - shows when in light mode to indicate switching to dark
             icon.innerHTML = '<i class="fa-solid fa-moon"></i>';
             button.setAttribute('aria-label', 'Switch to dark mode');
             button.setAttribute('title', 'Switch to dark mode');

@@ -372,7 +372,7 @@ function getWindowSizes(document) {
 
 var classCallCheck = function (instance, Constructor) {
   if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
+    throw new TypeError('Cannot call a class as a function');
   }
 };
 
@@ -382,7 +382,7 @@ var createClass = function () {
       var descriptor = props[i];
       descriptor.enumerable = descriptor.enumerable || false;
       descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
+      if ('value' in descriptor) descriptor.writable = true;
       Object.defineProperty(target, descriptor.key, descriptor);
     }
   }
@@ -892,10 +892,10 @@ function runModifiers(modifiers, data, ends) {
 
   modifiersToRun.forEach(function (modifier) {
     if (modifier['function']) {
-      // eslint-disable-line dot-notation
+       
       console.warn('`modifier.function` is deprecated, use `modifier.fn`!');
     }
-    var fn = modifier['function'] || modifier.fn; // eslint-disable-line dot-notation
+    var fn = modifier['function'] || modifier.fn;  
     if (modifier.enabled && isFunction(fn)) {
       // Add properties to offsets to make them a complete clientRect object
       // we do this before each modifier to make sure the previous one doesn't

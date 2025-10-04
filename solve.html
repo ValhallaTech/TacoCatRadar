@@ -83,9 +83,11 @@
                         <li>Takes user input from a text field</li>
                         <li>Reverses the string character-by-character using a for loop</li>
                         <li>Compares the original string to its reversed version (case-insensitive)</li>
-                        <li>Validates input to prevent empty submissions</li>
+                        <li>Validates input to prevent empty submissions with visual feedback</li>
                         <li>Displays the reversed string in an output field</li>
-                        <li>Provides visual feedback using SweetAlert2 modals and confetti celebration</li>
+                        <li>Shows loading state during processing with animated spinner</li>
+                        <li>Provides visual feedback using SweetAlert2 modals and confetti celebrations</li>
+                        <li>Supports both button click and Enter key submission</li>
                     </ul>
                 </section>
 
@@ -95,27 +97,51 @@
                         <div class="col-md-6">
                             <h4>JavaScript Concepts</h4>
                             <ul>
-                                <li>String manipulation</li>
+                                <li>String manipulation (reversal, comparison)</li>
                                 <li>For loops and iteration</li>
-                                <li>DOM manipulation</li>
-                                <li>Event listeners (click and keypress)</li>
+                                <li>DOM manipulation and traversal</li>
+                                <li>Event listeners (click, submit, keypress, input)</li>
                                 <li>Conditional logic (if/else)</li>
-                                <li>Input validation</li>
+                                <li>Input validation with real-time feedback</li>
                                 <li>ES6 modules and imports</li>
+                                <li>Async/await for loading states</li>
+                                <li>CSS class manipulation for state management</li>
+                                <li>localStorage for theme persistence</li>
+                                <li>matchMedia API for system preferences</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <h4>Modern Web Development</h4>
                             <ul>
-                                <li>Bootstrap 5 for responsive design</li>
+                                <li>Bootstrap 5.3.3 for responsive design</li>
                                 <li>Parcel bundler for build optimization</li>
-                                <li>Yarn for package management</li>
-                                <li>Modern JavaScript libraries (SweetAlert2, canvas-confetti)</li>
+                                <li>Yarn Modern for package management</li>
+                                <li>Modern JavaScript libraries (SweetAlert2, canvas-confetti, Font Awesome)</li>
                                 <li>Form handling and validation</li>
-                                <li>Accessibility best practices</li>
-                                <li>Dark mode support with CSS variables</li>
+                                <li>Accessibility best practices (WCAG 2.1 AA)</li>
+                                <li>Dark mode with CSS custom properties</li>
+                                <li>ESLint for code quality</li>
+                                <li>Responsive typography with clamp()</li>
+                                <li>Progressive enhancement</li>
                             </ul>
                         </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Key Features Implemented</h2>
+                    <div class="alert alert-success">
+                        <h5 class="alert-heading">✨ What Makes This App Special</h5>
+                        <ul class="mb-0">
+                            <li><strong>Case-Insensitive Detection:</strong> "Taco Cat" and "TACO CAT" both work!</li>
+                            <li><strong>Visual Validation:</strong> Red border + shake animation for errors, green for success</li>
+                            <li><strong>Loading States:</strong> Button shows "Checking..." with animated spinner</li>
+                            <li><strong>Neon Dark Mode:</strong> Cyberpunk-themed with glowing gradients</li>
+                            <li><strong>Confetti Celebration:</strong> Animated confetti burst for palindromes</li>
+                            <li><strong>Fully Accessible:</strong> Screen reader support, keyboard navigation, ARIA labels</li>
+                            <li><strong>Responsive Design:</strong> Fluid typography that adapts to screen size</li>
+                            <li><strong>No FOUC:</strong> Theme applied before page renders</li>
+                        </ul>
                     </div>
                 </section>
 
@@ -127,12 +153,51 @@
                     <div class="alert alert-info">
                         <h5 class="alert-heading">Palindrome Examples to Try:</h5>
                         <ul class="mb-0">
-                            <li><strong>Taco Cat</strong> - The classic! (Now works with mixed case!)</li>
-                            <li><strong>RaceCar</strong> - A speedy palindrome</li>
-                            <li><strong>Level</strong> - Short and sweet</li>
-                            <li><strong>Madam</strong> - A classic single word</li>
-                            <li><strong>Kayak</strong> - Another fun one!</li>
+                            <li><strong>Taco Cat</strong> ✅ The classic! (Now works with mixed case!)</li>
+                            <li><strong>RaceCar</strong> ✅ A speedy palindrome</li>
+                            <li><strong>Level</strong> ✅ Short and sweet</li>
+                            <li><strong>Madam</strong> ✅ A classic single word</li>
+                            <li><strong>Kayak</strong> ✅ Another fun one!</li>
+                            <li><strong>Never odd or even</strong> ✅ A phrase palindrome</li>
                         </ul>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Technical Highlights</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <strong>🎨 UI/UX Features</strong>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="mb-0">
+                                        <li>Material Design gradient navbar</li>
+                                        <li>Google Fonts (Bangers, Righteous)</li>
+                                        <li>Smooth animations and transitions</li>
+                                        <li>Font Awesome 6.7 icons</li>
+                                        <li>Pink hover effects on nav items</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <strong>⚡ Performance</strong>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="mb-0">
+                                        <li>Parcel bundler optimization</li>
+                                        <li>Minified and tree-shaken code</li>
+                                        <li>CSS custom properties for theming</li>
+                                        <li>Efficient event delegation</li>
+                                        <li>Static deployment ready</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

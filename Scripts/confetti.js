@@ -26,7 +26,7 @@ var confetti = {
 	confetti.remove = removeConfetti;
 	confetti.isRunning = isConfettiRunning;
 	var supportsAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame;
-	var colors = ["rgba(249,87,117,", "rgba(250,120,144,", "rgba(251,147,166,", "rgba(251,168,183,", "rgba(251,185,197,", "rgba(251,199,208,", "rgba(251,210,217,"];
+	var colors = ['rgba(249,87,117,', 'rgba(250,120,144,', 'rgba(251,147,166,', 'rgba(251,168,183,', 'rgba(251,185,197,', 'rgba(251,199,208,', 'rgba(251,210,217,'];
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var pause = false;
@@ -36,8 +36,8 @@ var confetti = {
 	var context = null;
 
 	function resetParticle(particle, width, height) {
-		particle.color = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ")");
-		particle.color2 = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ")");
+		particle.color = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ')');
+		particle.color2 = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ')');
 		particle.x = Math.random() * width;
 		particle.y = Math.random() * height - height;
 		particle.diameter = Math.random() * 10 + 5;
@@ -99,21 +99,21 @@ var confetti = {
 					return window.setTimeout(callback, confetti.frameInterval);
 				};
 		})();
-		var canvas = document.getElementById("confetti-canvas");
+		var canvas = document.getElementById('confetti-canvas');
 		if (canvas === null) {
-			canvas = document.createElement("canvas");
-			canvas.setAttribute("id", "confetti-canvas");
-			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:fixed;top:0");
+			canvas = document.createElement('canvas');
+			canvas.setAttribute('id', 'confetti-canvas');
+			canvas.setAttribute('style', 'display:block;z-index:999999;pointer-events:none;position:fixed;top:0');
 			document.body.prepend(canvas);
 			canvas.width = width;
 			canvas.height = height;
-			window.addEventListener("resize", function() {
+			window.addEventListener('resize', function() {
 				canvas.width = window.innerWidth;
 				canvas.height = window.innerHeight;
 			}, true);
-			context = canvas.getContext("2d");
+			context = canvas.getContext('2d');
 		} else if (context === null)
-			context = canvas.getContext("2d");
+			context = canvas.getContext('2d');
 		var count = confetti.maxCount;
 		if (min) {
 			if (max) {
@@ -174,8 +174,8 @@ var confetti = {
 			y2 = particle.y + particle.tilt + particle.diameter / 2;
 			if (confetti.gradient) {
 				var gradient = context.createLinearGradient(x, particle.y, x2, y2);
-				gradient.addColorStop("0", particle.color);
-				gradient.addColorStop("1.0", particle.color2);
+				gradient.addColorStop('0', particle.color);
+				gradient.addColorStop('1.0', particle.color2);
 				context.strokeStyle = gradient;
 			} else
 				context.strokeStyle = particle.color;
