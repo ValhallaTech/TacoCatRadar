@@ -361,3 +361,7 @@ MigrationBackup/
 !.yarn/versions
 .pnp.*
 package-lock.json
+
+# Parcel build output
+dist/
+.parcel-cache/
