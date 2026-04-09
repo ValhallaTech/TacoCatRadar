@@ -22,5 +22,8 @@
     "globals": "^17.4.0",
     "parcel": "^2.16.0",
     "rimraf": "^6.0.1"
+  },
+  "resolutions": {
+    "minimatch": "^10.2.5"
   }
 }
