@@ -24,6 +24,7 @@
     "rimraf": "^6.0.1"
   },
   "resolutions": {
-    "minimatch": "^10.2.5"
+    "minimatch": "^10.2.5",
+    "picomatch": "^4.0.4"
   }
 }
