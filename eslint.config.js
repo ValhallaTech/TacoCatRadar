@@ -35,15 +35,6 @@ export default [
             'dist/**',
             '.parcel-cache/**',
             'node_modules/**',
-            'Content/**',
-            'Scripts/bootstrap*.js',
-            'Scripts/jquery*.js',
-            'Scripts/popper*.js',
-            'Scripts/sweetalert*.js',
-            'Scripts/confetti*.js',
-            'Scripts/esm/**',
-            'Scripts/src/**',
-            'Scripts/umd/**',
         ]
     }
 ];
