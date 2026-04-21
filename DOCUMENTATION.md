@@ -1,7 +1,7 @@
 # TacoCat Radar - Project Documentation
 
 ## Overview
-This document consolidates all project documentation including setup, migration notes, and development guidelines.
+This document consolidates active project documentation including setup and development guidelines.
 
 ## Quick Start
 
@@ -73,26 +73,14 @@ yarn build
 - ESLint 9.17.0 (linter)
 - rimraf 6.0.1 (cross-platform rm)
 
-### Backend
-- .NET Framework 4.8
+### Runtime
+- Node.js (see `.nvmrc`)
 
-## Migration History
+## Build Process
 
-### From npm to Yarn Modern (4.10.3)
-- Migrated all packages from npm/NuGet to Yarn
-- Removed node_modules in favor of Yarn PnP
-- Updated .gitignore for Yarn artifacts
-
-### From jQuery to Vanilla JS
-- Removed jQuery dependency
-- Refactored to modern ES6+ JavaScript
-- Improved performance
-
-### Build Process Modernization
-- Added Parcel bundler for zero-config builds
-- Implemented ES6 module imports
-- Optimized for production with minification
-- Added hot module reloading for dev
+- Parcel bundler for zero-config builds
+- ES modules for dependency management
+- Optimized production bundles
 
 ## Project Structure
 
@@ -107,11 +95,10 @@ TacoCatRadar/
 ?   ??? CodeDisplay.js        # Syntax highlighting
 ??? styles/
 ?   ??? custom.css            # Custom styles + theme
-??? images/                   # Favicons
-??? Content/                  # Old Bootstrap (ignore)
+??? Images/                   # Favicons and image assets
 ??? package.json              # Dependencies
 ??? .yarnrc.yml              # Yarn config
-??? .eslintrc.json           # Linter config
+??? eslint.config.js         # Linter config
 ??? .gitignore               # Git exclusions
 ```
 
