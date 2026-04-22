@@ -18,7 +18,7 @@ export default [
         },
         
         // Only lint YOUR custom JavaScript files
-        files: ['Scripts/Palindrome.js', 'Scripts/DarkModeToggle.js', 'Scripts/CodeDisplay.js'],
+        files: ['src/js/Palindrome.js', 'src/js/DarkModeToggle.js', 'src/js/CodeDisplay.js'],
         
         // Custom rules
         rules: {

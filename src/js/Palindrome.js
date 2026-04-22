@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti';
 import Swal from 'sweetalert2';
 
 // Import custom CSS
-import '../styles/custom.css';
+import '../css/custom.css';
 
 //Function that reverses the input string
 function fncReverse02() {
