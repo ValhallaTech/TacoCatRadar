@@ -86,16 +86,18 @@ yarn build
 
 ```
 TacoCatRadar/
-??? index.html                 # Main palindrome checker
-??? solve.html                 # Exercise explanation
-??? code.html                  # Source code display
-??? Scripts/
-?   ??? Palindrome.js         # Main logic + validation
-?   ??? DarkModeToggle.js     # Theme switching
-?   ??? CodeDisplay.js        # Syntax highlighting
-??? styles/
-?   ??? custom.css            # Custom styles + theme
-??? Images/                   # Favicons and image assets
+??? src/
+?   ??? index.html            # Main palindrome checker
+?   ??? solve.html            # Exercise explanation
+?   ??? code.html             # Source code display
+?   ??? js/
+?   ?   ??? Palindrome.js     # Main logic + validation
+?   ?   ??? DarkModeToggle.js # Theme switching
+?   ?   ??? CodeDisplay.js    # Syntax highlighting
+?   ??? css/
+?   ?   ??? custom.css        # Custom styles + theme
+?   ??? images/               # Favicons and image assets
+?   ??? site.webmanifest      # Web app manifest
 ??? package.json              # Dependencies
 ??? .yarnrc.yml              # Yarn config
 ??? eslint.config.js         # Linter config
@@ -115,9 +117,9 @@ yarn lint       # Run ESLint
 ## Configuration
 
 ### Parcel Entry Points
-- index.html
-- solve.html
-- code.html
+- src/index.html
+- src/solve.html
+- src/code.html
 
 ### Output Directory
 - `dist/` - Production builds

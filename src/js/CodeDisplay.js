@@ -4,7 +4,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/components/prism-javascript';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/custom.css';
+import '../css/custom.css';
 
 // The actual code from Palindrome.js as a string
 const palindromeCode = `// Import dependencies
@@ -14,7 +14,7 @@ import confetti from 'canvas-confetti';
 import Swal from 'sweetalert2';
 
 // Import custom CSS
-import '../styles/custom.css';
+import '../css/custom.css';
 
 //Function that reverses the input string
 function fncReverse02() {

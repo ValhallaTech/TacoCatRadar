@@ -3,10 +3,10 @@
   "type": "module",
   "packageManager": "yarn@4.14.1",
   "scripts": {
-    "dev": "parcel serve index.html solve.html code.html",
-    "build": "parcel build index.html solve.html code.html --dist-dir dist",
+    "dev": "parcel serve src/index.html src/solve.html src/code.html",
+    "build": "parcel build src/index.html src/solve.html src/code.html --dist-dir dist",
     "clean": "rimraf dist .parcel-cache",
-    "lint": "eslint Scripts/Palindrome.js Scripts/DarkModeToggle.js Scripts/CodeDisplay.js"
+    "lint": "eslint src/js/Palindrome.js src/js/DarkModeToggle.js src/js/CodeDisplay.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
