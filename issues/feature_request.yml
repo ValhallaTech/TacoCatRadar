@@ -27,7 +27,6 @@ Relevant code references:
 - [src/code.html](https://github.com/ValhallaTech/TacoCatRadar/blob/main/src/code.html): `<script src="//code.jquery.com/jquery-3.5.1.slim.min.js">` and `<script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">` must be replaced with Bootstrap 5+ bundle only.
 - [src/solve.html](https://github.com/ValhallaTech/TacoCatRadar/blob/main/src/solve.html): Same script tags must be updated.
 - [YARN_MIGRATION.md](https://github.com/ValhallaTech/TacoCatRadar/blob/main/YARN_MIGRATION.md): Remove jQuery and Popper.js steps after upgrading Bootstrap.
-- [src/js/jquery-3.5.1.slim.js](https://github.com/ValhallaTech/TacoCatRadar/blob/main/src/js/jquery-3.5.1.slim.js): Delete as part of cleanup.
 
 ## Alternatives
 Continue using Bootstrap 4.x and jQuery (not recommended for modern web apps)
