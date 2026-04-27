@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://fs3tacocatradar.netlify.app/sitemap.xml
