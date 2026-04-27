@@ -34,6 +34,7 @@
     
     /* Enhanced contrast for dark mode */
     --bs-border-color: #3d2a5c;
+    --input-placeholder-color: rgba(224, 212, 255, 0.55);
 }
 
 /* ============================================
@@ -322,7 +323,7 @@
 }
 
 [data-bs-theme="dark"] .form-control::placeholder {
-    color: rgba(224, 212, 255, 0.55);
+    color: var(--input-placeholder-color);
 }
 
 [data-bs-theme="dark"] .form-control:focus {
