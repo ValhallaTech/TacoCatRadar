@@ -17,6 +17,12 @@
     YARN_VERSION = "4.14.1"
 
 # Redirects and rewrites
+# Explicit rule so /robots.txt is served as a static file and not caught by the SPA catch-all below
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -30,6 +36,8 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # unsafe-inline is required for the inline theme-detection script in index.html and Parcel-bundled inline styles
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
 
 # Cache static assets (JavaScript)
 [[headers]]
