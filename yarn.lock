@@ -611,6 +611,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/packager-raw-url@npm:2.16.4":
+  version: 2.16.4
+  resolution: "@parcel/packager-raw-url@npm:2.16.4"
+  dependencies:
+    "@parcel/plugin": "npm:2.16.4"
+    "@parcel/utils": "npm:2.16.4"
+  checksum: 10c0/9589bf07e056f2f06d5b98f3b5328af67cbc720fb0f2a2267bafea2d9e761464a5f752daa37e69f7beebeaa45400560424a7d919049adec56746731f0cd2948b
+  languageName: node
+  linkType: hard
+
 "@parcel/packager-raw@npm:2.16.4":
   version: 2.16.4
   resolution: "@parcel/packager-raw@npm:2.16.4"
@@ -1011,6 +1021,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/transformer-webmanifest@npm:2.16.4":
+  version: 2.16.4
+  resolution: "@parcel/transformer-webmanifest@npm:2.16.4"
+  dependencies:
+    "@mischnic/json-sourcemap": "npm:^0.1.1"
+    "@parcel/diagnostic": "npm:2.16.4"
+    "@parcel/plugin": "npm:2.16.4"
+    "@parcel/utils": "npm:2.16.4"
+  checksum: 10c0/7f67488fe0b155a697ce9043020eb63208daaa0860495db2e4c25382e410129ea40356fd172166e428908afd731f9ad61c4098eafd8c99c36517382c23c6828f
+  languageName: node
+  linkType: hard
+
 "@parcel/types-internal@npm:2.16.4":
   version: 2.16.4
   resolution: "@parcel/types-internal@npm:2.16.4"
@@ -1384,6 +1406,8 @@ __metadata:
   dependencies:
     "@eslint/js": "npm:10.0.1"
     "@fortawesome/fontawesome-free": "npm:7.2.0"
+    "@parcel/packager-raw-url": "npm:2.16.4"
+    "@parcel/transformer-webmanifest": "npm:2.16.4"
     "@popperjs/core": "npm:2.11.8"
     bootstrap: "npm:5.3.8"
     canvas-confetti: "npm:1.9.4"

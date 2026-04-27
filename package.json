@@ -4,7 +4,7 @@
   "packageManager": "yarn@4.14.1",
   "scripts": {
     "dev": "parcel serve src/index.html src/solve.html src/code.html",
-    "build": "parcel build src/index.html src/solve.html src/code.html --dist-dir dist",
+    "build": "parcel build src/index.html src/solve.html src/code.html --dist-dir dist && cp src/robots.txt dist/robots.txt",
     "clean": "rimraf dist .parcel-cache",
     "lint": "eslint src/js/Palindrome.js src/js/DarkModeToggle.js src/js/CodeDisplay.js"
   },
@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@parcel/packager-raw-url": "2.16.4",
+    "@parcel/transformer-webmanifest": "2.16.4",
     "eslint": "10.2.1",
     "globals": "17.5.0",
     "parcel": "2.16.4",

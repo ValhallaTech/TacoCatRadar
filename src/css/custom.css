@@ -333,7 +333,7 @@
     position: absolute;
     top: -40px;
     left: 0;
-    background: var(--brand-gradient-start);
+    background: #3d4fbb; /* was var(--brand-gradient-start) = #667eea — contrast too low for WCAG AA */
     color: white;
     padding: 8px;
     text-decoration: none;
