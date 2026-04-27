@@ -318,6 +318,11 @@
 
 [data-bs-theme="dark"] .form-control {
     border-color: var(--bs-border-color);
+    color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .form-control::placeholder {
+    color: rgba(224, 212, 255, 0.55);
 }
 
 [data-bs-theme="dark"] .form-control:focus {
