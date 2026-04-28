@@ -67,16 +67,33 @@ async function checkPalindrome(event) {
         inputBox.classList.add('input-success');
         outputBox.classList.add('input-success');
         
-        // Trigger confetti celebration
-        confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
-        });
-        
         Swal.fire({
             title: 'You Haz Palindrome!',
             icon: 'success',
+            didOpen: () => {
+                // Create a canvas on top of the Swal overlay
+                const canvas = document.createElement('canvas');
+                canvas.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 99999;
+                `;
+                document.body.appendChild(canvas);
+
+                const myConfetti = confetti.create(canvas, { resize: true, useWorker: true });
+                myConfetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                });
+
+                // Clean up the canvas after the animation finishes
+                setTimeout(() => canvas.remove(), 4000);
+            },
         });
     }
     else {
