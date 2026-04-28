@@ -25,7 +25,7 @@ yarn build
 - ? Real-time string reversal display
 
 ### UI/UX Enhancements
-- ? Bootstrap 5.3.3 responsive design
+- ? Bootstrap 5.3.8 responsive design
 - ? Custom gradient theme (purple/pink)
 - ? Google Fonts (Bangers, Righteous)
 - ? Material Design navbar
@@ -56,22 +56,26 @@ yarn build
 - HTML5 (semantic markup)
 - CSS3 (custom properties, gradients)
 - JavaScript ES6+ (modules, async/await)
-- Bootstrap 5.3.3
+- Bootstrap 5.3.8
 - Google Fonts (Bangers, Righteous)
 
 ### Libraries
-- @fortawesome/fontawesome-free: 6.7.2
+- @fortawesome/fontawesome-free: 7.2.0
 - @popperjs/core: 2.11.8
-- bootstrap: 5.3.3
-- canvas-confetti: 1.9.3
-- prismjs: 1.29.0
-- sweetalert2: 11.14.5
+- bootstrap: 5.3.8
+- canvas-confetti: 1.9.4
+- prismjs: 1.30.0
+- sweetalert2: 11.26.24
 
 ### Development Tools
-- Parcel 2.16.0 (bundler)
-- Yarn Modern 4.10.3 (package manager)
-- ESLint 9.17.0 (linter)
-- rimraf 6.0.1 (cross-platform rm)
+- Parcel 2.16.4 (bundler)
+- Yarn Modern 4.14.1 (package manager)
+- ESLint 10.2.1 (linter)
+- rimraf 6.1.3 (cross-platform rm)
+- @eslint/js 10.0.1 (ESLint JS config helper)
+- globals 17.5.0 (global variable definitions for ESLint)
+- @parcel/packager-raw-url 2.16.4 (Parcel plugin)
+- @parcel/transformer-webmanifest 2.16.4 (Parcel plugin)
 
 ### Runtime
 - Node.js (see `.nvmrc`)
@@ -176,4 +180,4 @@ Fred Smith III
 MIT License
 
 ---
-Last Updated: 2025-01-03
+Last Updated: 2025-07-16
