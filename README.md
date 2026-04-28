@@ -2,7 +2,7 @@
 
 > A browser-based palindrome checker that celebrates when "tacocat" — a palindrome — reads the same forwards and backwards.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ValhallaTech/TacoCatRadar)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f5135f29-2a4b-401f-893c-5f11d7c5441e/deploy-status)](https://app.netlify.com/projects/fs3tacocatradar/deploys)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-24.15.0-brightgreen.svg)](.nvmrc)
 [![Yarn](https://img.shields.io/badge/yarn-4.14.1-2c8ebb.svg)](.yarnrc.yml)
