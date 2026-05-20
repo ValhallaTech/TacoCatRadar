@@ -1,7 +1,7 @@
 {
   "name": "TacoCatRadar",
   "type": "module",
-  "packageManager": "yarn@4.14.1",
+  "packageManager": "yarn@4.15.0",
   "scripts": {
     "dev": "parcel serve src/index.html src/solve.html src/code.html",
     "build": "parcel build src/index.html src/solve.html src/code.html --dist-dir dist && node -e \"require('fs').copyFileSync('src/robots.txt', 'dist/robots.txt')\"",
