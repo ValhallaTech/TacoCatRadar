@@ -14,7 +14,7 @@
     "bootstrap": "5.3.8",
     "canvas-confetti": "1.9.4",
     "prismjs": "1.30.0",
-    "sweetalert2": "11.26.24"
+    "sweetalert2": "11.26.25"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
