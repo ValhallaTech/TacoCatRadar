@@ -20,7 +20,7 @@
     "@eslint/js": "10.0.1",
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
-    "eslint": "10.4.0",
+    "eslint": "10.4.1",
     "globals": "17.6.0",
     "parcel": "2.16.4",
     "rimraf": "6.1.3"
