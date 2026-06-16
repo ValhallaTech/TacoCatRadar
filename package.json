@@ -1,7 +1,7 @@
 {
   "name": "TacoCatRadar",
   "type": "module",
-  "packageManager": "yarn@4.16.0",
+  "packageManager": "yarn@4.17.0",
   "scripts": {
     "dev": "parcel serve src/index.html src/solve.html src/code.html",
     "build": "parcel build src/index.html src/solve.html src/code.html --dist-dir dist && node -e \"require('fs').copyFileSync('src/robots.txt', 'dist/robots.txt')\"",
@@ -20,7 +20,7 @@
     "@eslint/js": "10.0.1",
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
-    "eslint": "10.4.1",
+    "eslint": "10.5.0",
     "globals": "17.6.0",
     "parcel": "2.16.4",
     "rimraf": "6.1.3"
