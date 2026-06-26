@@ -9,7 +9,7 @@
     "lint": "eslint src/js/Palindrome.js src/js/DarkModeToggle.js src/js/CodeDisplay.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "7.2.0",
+    "@fortawesome/fontawesome-free": "7.3.0",
     "@popperjs/core": "2.11.8",
     "bootstrap": "5.3.8",
     "canvas-confetti": "1.9.4",
@@ -20,8 +20,8 @@
     "@eslint/js": "10.0.1",
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
-    "eslint": "10.5.0",
-    "globals": "17.6.0",
+    "eslint": "10.6.0",
+    "globals": "17.7.0",
     "parcel": "2.16.4",
     "rimraf": "6.1.3"
   },
