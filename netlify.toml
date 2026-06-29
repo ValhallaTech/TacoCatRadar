@@ -13,8 +13,8 @@
 
 # Node.js version (22 = latest LTS - 22.20.0)
 [build.environment]
-    NODE_VERSION = "24.15.0"
-    YARN_VERSION = "4.14.1"
+    NODE_VERSION = "24.18.0"
+    YARN_VERSION = "4.17.0"
 
 # Redirects and rewrites
 # Explicit rule so /robots.txt is served as a static file and not caught by the SPA catch-all below
