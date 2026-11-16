@@ -11,7 +11,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "7.3.1",
     "@popperjs/core": "2.11.8",
-    "bootstrap": "5.3.8",
+    "bootstrap": "5.3.9",
     "canvas-confetti": "1.9.4",
     "prismjs": "1.30.0",
     "sweetalert2": "11.26.25"
@@ -20,14 +20,14 @@
     "@eslint/js": "10.0.1",
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "globals": "17.14.0",
     "parcel": "2.16.4",
     "rimraf": "6.1.4"
   },
   "resolutions": {
-    "glob": "14.0.4",
-    "minimatch": "11.0.6",
+    "glob": "14.0.6",
+    "minimatch": "11.0.9",
     "picomatch": "4.0.7"
   }
 }
